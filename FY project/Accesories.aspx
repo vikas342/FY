@@ -23,18 +23,18 @@ Accesories
       <div class="panel-heading">Accesories</div>
       <div class="panel-body">
 
-  <%-- <asp:TextBox ID="txtFilterGrid1Record" CssClass="form-control" runat="server" 
+   <asp:TextBox ID="txtFilterGrid1Record" CssClass="form-control" runat="server" 
               placeholder="Search Products...." AutoPostBack="true" 
               ontextchanged="txtFilterGrid1Record_TextChanged" ></asp:TextBox>
-      --%>    
+        
       <br />
       <hr />
     <asp:repeater ID="rptrProducts" runat="server">
            <ItemTemplate>
         <div class="col-sm-3 col-md-3">
             <a href="ProductView.aspx?PID=<%# Eval("PID") %>" style="text-decoration:none;">
-          <div class="thumbnail">              
-              <img src="Images/ProductImages/<%# Eval("PID") %>/<%# Eval("ImageName") %><%# Eval("Extention") %>" alt="<%# Eval("ImageName") %>"/>
+          <div class="thumbnail" style="height:300px">              
+              <img src="Images/ProductImages/<%# Eval("PID") %>/<%# Eval("ImageName") %><%# Eval("Extention") %>" alt="<%# Eval("ImageName") %>" style="width:200px; height:200px"/>
               <div class="caption"> 
                    <div class="probrand"><%# Eval ("BrandName") %>  </div>
                    <div class="proName"> <%# Eval ("PName") %> </div>

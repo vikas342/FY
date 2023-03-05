@@ -26,7 +26,10 @@
                     <br />
                     <br />
                     <br />
-                    <asp:Button ID="Button1" runat="server" CssClass="btn btn-primary" Font-Size="Large" Text="Back To Products" OnClick="Button1_Click" />
+                    <h3>Your order will be deliverd in few day</h3>
+                    <h3>Thank You for Shopping</h3>
+
+                    <asp:Button ID="Button1" runat="server" CssClass="btn btn-primary" Font-Size="Large" Text="Back To Home" OnClick="Button1_Click" />
                 </div>
             </div>
         </div>

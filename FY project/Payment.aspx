@@ -113,12 +113,12 @@
                 </div>
             </div>
 
-             <div class="tab-content">
+           <div class="tab-content">
                                 <div id="PlaceNPay" class="tab-pane fade in active">
                                     <h3>Place your order and Pay using our <a href="acceptedpayments" target="_blank">Accepted Payments</a> channels, Your order will be dispatched upon receiving full payment.</h3>
                                     <asp:Button ID="BtnPlaceNPay" CssClass=" btn btn-info" Font-Size="Large" ValidationGroup="PaymentPage" runat="server" OnClick="BtnPlaceNPay_Click" Text="Checkout &raquo;" />
                                 </div>
-                                <div id="EasyPaisa" class="tab-pane fade">
+                                <div id="EasyPaisa" class="tab-pane ">
                                     <h3 class="center1">EasyPaisa Payment Gateway Coming Soon</h3>
                                     <h4 class="center1">Until that you can send amount @ 0311 0000193</h4>
                                     <!--  <asp:Button ID="btnEasyPaisa" CssClass=" btn btn-success" Font-Size="Large" runat="server" Text="Pay with EasyPaisa &raquo;" /> -->
@@ -133,6 +133,7 @@
                                     <!-- <asp:Button ID="btnCOD" CssClass="btn btn-primary" runat="server" Text="CheckOut &raquo;" Font-Size="Large" /> -->
                                 </div>
                             </div>
+          
         </div>
 
 

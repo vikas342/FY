@@ -27,8 +27,8 @@ public partial class Cart : System.Web.UI.Page
             {
                 Response.Redirect("Signin.aspx");
             }
-        } 
-        
+        }
+
     }
 
     public void BindCartNumber()
@@ -51,7 +51,7 @@ public partial class Cart : System.Web.UI.Page
                     {
                         string CartQuantity = dt.Compute("Sum(Qty)", "").ToString();
                         CartBadge.InnerText = CartQuantity;
-                        
+
                     }
                     else
                     {
@@ -141,6 +141,9 @@ public partial class Cart : System.Web.UI.Page
                 }
 
             }
+
+            Response.Redirect("Cart.aspx");
+
         }
         else if (e.CommandName == "DoMinus")
         {
@@ -184,6 +187,8 @@ public partial class Cart : System.Web.UI.Page
 
                 }
             }
+            Response.Redirect("Cart.aspx");
+
         }
         else if (e.CommandName == "RemoveThisCart")
         {
@@ -200,7 +205,10 @@ public partial class Cart : System.Web.UI.Page
                 con.Close();
                 BindProductCart();
                 BindCartNumber();
+
+                Response.Redirect("Cart.aspx");
             }
+
         }
     }
 

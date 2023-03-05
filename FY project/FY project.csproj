@@ -77,6 +77,7 @@
     <Content Include="AdminAbout.aspx" />
     <Content Include="AdminHome.aspx" />
     <Content Include="Cart.aspx" />
+    <Content Include="Contact.aspx" />
     <Content Include="css\bootstrap-grid.css" />
     <Content Include="css\bootstrap-grid.min.css" />
     <Content Include="css\bootstrap-reboot.css" />
@@ -180,6 +181,7 @@
     <Content Include="ManPants.aspx" />
     <Content Include="ManShirt.aspx" />
     <Content Include="ManFootwear.aspx" />
+    <Content Include="MensClothing.aspx" />
     <Content Include="Mobile\iphone11.jpeg" />
     <Content Include="Payment.aspx" />
     <Content Include="Products.aspx" />
@@ -191,10 +193,12 @@
     <Content Include="SubCategory.aspx" />
     <Content Include="Success.aspx" />
     <Content Include="UserHome.aspx" />
+    <Content Include="UserOrders.aspx" />
     <Content Include="Web.config" />
     <Content Include="WomanFootwear.aspx" />
     <Content Include="womanLegging.aspx" />
     <Content Include="WomanSarees.aspx" />
+    <Content Include="WomansClothing.aspx" />
     <Content Include="WomanTop.aspx" />
   </ItemGroup>
   <ItemGroup>
@@ -244,6 +248,13 @@
     <Compile Include="Cart.aspx.cs">
       <DependentUpon>Cart.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contact.aspx.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contact.aspx.designer.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
     </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
@@ -295,6 +306,13 @@
     <Compile Include="ManFootwear.aspx.designer.cs">
       <DependentUpon>ManFootwear.aspx</DependentUpon>
     </Compile>
+    <Compile Include="MensClothing.aspx.cs">
+      <DependentUpon>MensClothing.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MensClothing.aspx.designer.cs">
+      <DependentUpon>MensClothing.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Payment.aspx.cs">
       <DependentUpon>Payment.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -340,6 +358,13 @@
       <DependentUpon>UserHome.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
+    <Compile Include="UserOrders.aspx.cs">
+      <DependentUpon>UserOrders.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserOrders.aspx.designer.cs">
+      <DependentUpon>UserOrders.aspx</DependentUpon>
+    </Compile>
     <Compile Include="WomanFootwear.aspx.cs">
       <DependentUpon>WomanFootwear.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -354,6 +379,13 @@
     <Compile Include="WomanSarees.aspx.cs">
       <DependentUpon>WomanSarees.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WomansClothing.aspx.cs">
+      <DependentUpon>WomansClothing.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WomansClothing.aspx.designer.cs">
+      <DependentUpon>WomansClothing.aspx</DependentUpon>
     </Compile>
     <Compile Include="WomanTop.aspx.cs">
       <DependentUpon>WomanTop.aspx</DependentUpon>

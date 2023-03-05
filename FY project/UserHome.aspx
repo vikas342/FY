@@ -45,7 +45,9 @@
                 </div>
                 <div class ="navbar-collapse collapse">
                     <ul class ="nav navbar-nav navbar-right">
-                        <li ><a href ="UserHome.aspx">Home</a> </li>
+                        <li><a href ="UserHome.aspx">Home</a> </li>
+                        <li><a href ="UserOrders.aspx">Orders</a> </li>
+
                          <li ><a href ="About.aspx">About</a> </li>
                         <%--<li ><a href ="#">Contact US</a> </li>--%>
                         <%--<li ><a href ="#">Blog-</a> </li>--%>
@@ -135,39 +137,95 @@
     <!---Middle COntents start---->
     <hr />
     <div class="container center ">
-        <div class="row ">
-            <div class="col-lg-4">
-                <img class="img-circle " src="Mobile/iphone11.jpeg" alt="thumb" width="140" height="140" />
+        <div class="row" style="margin-bottom:25px;">
+            <div class="col-lg-4 home_category"  style="padding:15px">
+
+                <a href="Accesories.aspx">
+
+                <img class="img-circle " src="Images/accesories.jpg" alt="thumb" width="140" height="140" />
+                </a>
                 <h2>
-                    Mobiles</h2>
-                <p>
-                    Featuring a 15.49-cm (6.1) all-screen Liquid Retina LCD and a glass and aluminum
-                    design, the iPhone 11 is as beautiful as it gets. Also, the IP68 rating ensures
-                    that is water-resistant up to 2 meters for 30 minutes....</p>
-                <p>
-                    <a class="btn btn-default " href="#" role="button">View More &raquo;</a></p>
+                    Accesories</h2>
+                <p class="text-justify">
+                    Complete your outfit with our selection of accesories,We offers Watches, Sunglasses, Handbags, Scarves, Hair Accecories, Perfume and more.we have something for every style and budget.
+                   </p>
+                
+                    <a class="btn btn-default " href="Accesories.aspx" role="button">View More &raquo;</a>
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-4 home_category"  style="padding:15px">
+                <a href="MensClothing.aspx">
+
                 <img class="img-circle " src="Images/mens_clothing.jpg" alt="thumb" width="140" height="140" />
+                </a>
                 <h2>
                     Men's clothing</h2>
-                <p>
-                    Featuring a 15.49-cm (6.1) all-screen Liquid Retina LCD and a glass and aluminum
-                    design, the iPhone 11 is as beautiful as it gets. Also, the IP68 rating ensures
-                    that is water-resistant up to 2 meters for 30 minutes....</p>
-                <p>
-                    <a class="btn btn-default " href="#" role="button">View More &raquo;</a></p>
-            </div>
-            <div class="col-lg-4">
+                 <p class="text-justify">
+                
+                    We offer a variety of stylish and functional options for every occasion.We offers Tshirt, Shirt, Jeans ,Footwear and more.we have something for every style and budget. Shop now and find your new favorite outfit!
+                </p>
+                    <a class="btn btn-default " href="MensClothing.aspx" role="button">View More &raquo;</a>
+            </div>            
+
+            
+            <div class="col-lg-4"  style="padding:15px">
+                <a href="WomansClothing.aspx">
+
                 <img class="img-circle " src="Images/womens_clothing.jpg" alt="thumb" width="140" height="140" />
+                </a>
                 <h2>
                     Women's Clothings</h2>
-                <p>
-                    Featuring a 15.49-cm (6.1) all-screen Liquid Retina LCD and a glass and aluminum
-                    design, the iPhone 11 is as beautiful as it gets. Also, the IP68 rating ensures
-                    that is water-resistant up to 2 meters for 30 minutes....</p>
-                <p>
-                    <a class="btn btn-default " href="#" role="button">View More &raquo;</a></p>
+                <p class="text-justify">
+                
+                    We offer a variety of stylish and functional options for every occasion.We offers Dresses, Tops, Sarees ,Footwear and more.we have something for every style and budget. Shop now and find your new favorite outfit!
+                </p>
+                
+                    <a class="btn btn-default " href="WomansClothing.aspx" role="button">View More &raquo;</a>
+            </div>
+            </div>
+           
+        <div class="row">            
+            
+            <div class="col-lg-4 "  style="padding:15px">
+                <a href="ManFootwear.aspx">
+
+                <img class="img-circle " src="Images/mens_footwear.jpg" alt="thumb" width="140" height="140" />
+                </a>
+                <h2>
+                    Men's Footwear</h2>
+                                 <p class="text-justify">
+
+                    Step into style and step up your game with our impressive collection of men's footwear. Whether you're looking for sleek dress shoes, comfortable sneakers, or rugged boots, we have you covered.</p>
+                
+                    <a class="btn btn-default " href="#" role="button">View More &raquo;</a>
+            </div>            
+            
+            <div class="col-lg-4"  style="padding:15px">
+                <a href="WomanFootwear.aspx">
+
+                <img class="img-circle " src="Images/woman footwear.jpg"  alt="thumb" width="140" height="140" />
+                </a>
+                <h2>
+                    Woman's Footwear</h2>
+                               <p class="text-justify">
+
+                  Elevate your footwear game with our stunning collection of women's shoes. From stylish heels to comfortable flats, we have something for every occasion and every style.We have everything to up your fashion game.</p>
+                
+                    <a class="btn btn-default " href="WomanFootwear.aspx" role="button">View More &raquo;</a>
+            </div>            
+            
+            <div class="col-lg-4 home_category"  style="padding:15px">
+                <a href="Jwellery.aspx">
+                <img class="img-circle " src="Images/jwellery.jpg" alt="thumb" width="140" height="140" />
+                    </a>
+                
+                <h2>
+                    Jwellery</h2>
+                                 <p class="text-justify">
+Elevate your look with our stunning collection of jewelry. Our carefully curated selection features pieces crafted from the finest materials, designed to complement any outfit and occasion.</p>
+                
+                    
+                    <a class="btn btn-default " href="jwellery.aspx" role="button">View More &raquo;</a>
+                    
             </div>
         </div>
         <br />
@@ -183,12 +241,9 @@
                         <ItemTemplate>
                             <div class="col-sm-3 col-md-3 ">
                                 <a href="ProductView.aspx?PID=<%# Eval("PID") %>" style="text-decoration: none;">
-                                    <div class="thumbnail">
-                                        <img src="Images/ProductImages/<%# Eval("PID") %>/<%# Eval("ImageName") %><%# Eval("Extention") %>"
-                                            alt="<%# Eval("ImageName") %>" 
-                                            style="width:100%; height:300px;"
-                                            
-                                            />
+                                    
+          <div class="thumbnail" style="height:300px">              
+              <img src="Images/ProductImages/<%# Eval("PID") %>/<%# Eval("ImageName") %><%# Eval("Extention") %>" alt="<%# Eval("ImageName") %>" style="width:200px; height:200px"/>
                                         <div class="caption">
                                             <div class="probrand">
                                                 <%# Eval ("BrandName") %>
@@ -212,9 +267,7 @@
                     </asp:Repeater>
                 </div>
             </div>
-            <div class="panel-footer">
-                Buy 50 mobiles and get a gift card</div>
-        </div>
+          
     </div>
     </div>
     <!---Middle COntents End---->
@@ -227,7 +280,7 @@
         <footer>
             <div class ="container ">
                 <p class ="pull-right "><a href ="#">Back to top</a></p>
-                <p>&copy;2020 Eshopping.in &middot; <a href ="UserHome.aspx">Home</a>&middot;<a href ="Default.aspx">Products</a> </p>
+                <p>&copy;2020 Eshopping.in &middot; <a href ="UserHome.aspx">Home</a>&middot;<a href ="Products.aspx">Products</a>&middot;<a href ="Contact.aspx">Contact Us</a>&middot;<a href ="About.aspx">About Us</a> </p>
             </div>
 
         </footer>

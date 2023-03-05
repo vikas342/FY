@@ -273,13 +273,13 @@ public partial class Payment : System.Web.UI.Page
             Session["Address"] = txtAddress.Text;
             Session["Mobile"] = txtMobileNumber.Text;
             Session["OrderNumber"] = OrderNumber.ToString();
-            Session["PayMethod"] = "Place n Pay";
+            Session["PayMethod"] = "Cash On Delivery";
 
             string USERID = Session["USERID"].ToString();
-            string PaymentType = "PnP";
-            string PaymentStatus = "NotPaid";
+            string PaymentType = "COD";
+            string PaymentStatus = "Paid";
             string EMAILID = Session["USEREMAIL"].ToString();
-            string OrderStatus = "Pending";
+            string OrderStatus = "Delivered";
             string FullName = Session["getFullName"].ToString();
             using (SqlConnection con = new SqlConnection(CS))
             {
@@ -326,7 +326,7 @@ public partial class Payment : System.Web.UI.Page
                 myCmd.Parameters.AddWithValue("@Products", gvr.Cells[1].Text);
                 myCmd.Parameters.AddWithValue("@Quantity", gvr.Cells[2].Text);
                 myCmd.Parameters.AddWithValue("@OrderDate", DateTime.Now.ToString("yyyy-MM-dd"));
-                myCmd.Parameters.AddWithValue("@Status", "Pending");
+                myCmd.Parameters.AddWithValue("@Status", "Delivered");
                 if (con.State == ConnectionState.Closed) { con.Open(); }
                 Int64 OrderProID = Convert.ToInt64(myCmd.ExecuteScalar());
                 

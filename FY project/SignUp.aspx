@@ -70,46 +70,89 @@
 
 
     </div>
-
+          <br />
+        <br />
+        <br />
 
         <!---signup page--->
-        <div class ="center-page">
+        <div class ="container">
+               
+            <div class="form-horizontal">
 
-            <label class="col-xs-11">UserName:</label>
-            <div class="col-xs-11">
+              <h2>Signup Form</h2>
+                <hr />
+           
+
+            <div class="form-group">
+
+            <label class="col-md-2 control-label ">UserName:</label>
+            <div class="col-md-3">
             <asp:TextBox ID="txtUname" runat="server" Class="form-control" placeholder="Enter Your UserName"></asp:TextBox>
             </div>
-
-
-            <label class="col-xs-11">Password:</label>
-            <div class="col-xs-11">
-            <asp:TextBox ID="txtPass" runat="server" TextMode="Password" Class="form-control" placeholder="Enter Your password"></asp:TextBox>
             </div>
 
 
-            <label class="col-xs-11">Confirm Password:</label>
-            <div class="col-xs-11">
+            
+            <div class="form-group">
+
+            <label class="col-md-2 control-label ">Password:</label>
+            <div class="col-md-3">
+            <asp:TextBox ID="txtPass" runat="server" TextMode="Password" Class="form-control" placeholder="Enter Your password"></asp:TextBox>
+            </div>
+            </div>
+          
+            
+            <div class="form-group">
+            <label class="col-md-2 control-label ">Confirm Password:</label>
+            <div class="col-md-3">
             <asp:TextBox ID="txtCPass" runat="server" TextMode="Password" Class="form-control" placeholder="Enter Your Confirm password"></asp:TextBox>
             </div>
 
-            <label class="col-xs-11">Your Full Name:</label>
-            <div class="col-xs-11">
+          
+            </div>
+
+            <div class="form-group">
+
+            <label class="col-md-2 control-label ">Your Full Name:</label>
+            <div class="col-md-3">
             <asp:TextBox ID="txtName" runat="server" Class="form-control" placeholder="Enter Your Name"></asp:TextBox>
             </div>
 
+          
+            </div>
 
-            <label class="col-xs-11">Email:</label>
-            <div class="col-xs-11">
+
+            <div class="form-group">
+
+            <label class="col-md-2 control-label ">Email:</label>
+            <div class="col-md-3">
             <asp:TextBox ID="txtEmail" runat="server" Class="form-control" placeholder="Enter Your Email"></asp:TextBox>
             </div>
-            <label class="col-xs-11"></label>
-             <div class="col-xs-11">
+
+          
+            </div>
+
+            <div class="form-group">
+
+            <label class="col-md-2 control-label "></label>
+             <div class="col-md-3">
                  <asp:Button ID="txtsignup" Class="btn btn-success" runat="server" Text="SignUP" OnClick="txtsignup_Click" />
             &nbsp;
-                 <!--<asp:Label ID="lblMsg" runat="server" Text="Label"></asp:Label>
-                     --!>
+                    </div>
+          
             </div>
+
+         
+
+
+            </div>
+
+
+
+            
         </div>
+                 <!--<asp:Label ID="lblMsg" runat="server" Text="Label"></asp:Label>--!>
+         
          <!---signup page end--->
 
 

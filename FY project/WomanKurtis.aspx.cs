@@ -119,7 +119,7 @@ public partial class WomanKurtis: System.Web.UI.Page
 
         SqlConnection con = new SqlConnection(CS);
         con.Open();
-        string qr = "select A.*,B.*,C.Name ,A.PPrice-A.PSelPrice as DiscAmount,B.Name as ImageName, C.Name as BrandName from tblProducts A inner join tblBrands C on C.BrandID =A.PBrandID inner join tblCategory as t2 on t2.CatID=A.PCategoryID cross apply( select top 1 * from tblProductImages B where B.PID= A.PID order by B.PID desc )B where t2.CatName='Kurtas' or t2.CatName='Kurtis' AND A.PName like '" + txtFilterGrid1Record.Text + "%' order by A.PID desc";
+        string qr = "select A.*,B.*,C.Name ,A.PPrice-A.PSelPrice as DiscAmount,B.Name as ImageName, C.Name as BrandName from tblProducts A inner join tblBrands C on C.BrandID =A.PBrandID inner join tblCategory as t2 on t2.CatID=A.PCategoryID cross apply( select top 1 * from tblProductImages B where B.PID= A.PID order by B.PID desc )B where t2.CatName='kurti' or t2.CatName='Kurti' AND A.PName like '" + txtFilterGrid1Record.Text + "%' order by A.PID desc";
         SqlDataAdapter da = new SqlDataAdapter(qr, con);
         string text = ((TextBox)sender).Text;
         DataSet ds = new DataSet();

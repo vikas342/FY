@@ -9,8 +9,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE-edge">
-    <link href="css/Custome.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link href="css/Custome.css" rel="stylesheet" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <script type="text/javascript">
@@ -40,7 +40,7 @@
                 </div>
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav navbar-right">
-                        <li class="active"><a href="Default.aspx">Home</a> </li>
+                        <li><a href="Default.aspx">Home</a> </li>
                         <li><a href="About.aspx">About</a> </li>
                         <%--<li><a href="#">Contact US</a> </li>--%>
                         <%--<li><a href="#">Blog-</a> </li>--%>
@@ -87,27 +87,62 @@
                     <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
                     <li data-target="#myCarousel" data-slide-to="1"></li>
                     <li data-target="#myCarousel" data-slide-to="2"></li>
+                    <li data-target="#myCarousel" data-slide-to="3"></li>
+                    <li data-target="#myCarousel" data-slide-to="4"></li>
+
                 </ol>
                 <!-- Wrapper for slides -->
                 <div class="carousel-inner">
                     <div class="item active">
-                        <img src="ImgSlider/bannner2.gif" alt="Women's colothing offer" style="width: 100%; height:400px;">
+                        <a href="WomansClothing.aspx">
+                        <img src="ImgSlider/bannner2.gif" alt="Women's colothing offer" style="width: 100%; height:300px;">
+                            </a>
                         <div class="carousel-caption">
                           >
                         </div>
                     </div>
                     <div class="item">
-                        <img src="ImgSlider/banner1.jpg" alt="Men's clothing offers" style="width: 100%; height:400px;">
+                        <a href="MensClothing.aspx">
+
+
+                        <img src="ImgSlider/banner1.jpg" alt="Men's clothing offers" style="width: 100%; height:300px;">
+                        </a>
                         <div class="carousel-caption">
                             
                         </div>
                     </div>
                     <div class="item">
-                        <img src="ImgSlider/banner3.jpg" alt="mobile offers" style="width: 100%; height:400px">
+                        <a href="ManFootwear.aspx">
+
+                        <img src="ImgSlider/footwear_banner2.jpg" alt="mens footwear offers" style="width: 100%; height:300px">
+                        </a>
                         <div class="carousel-caption">
                            
                         </div>
+
+                              
                     </div>
+                              <div class="item">
+                                  <a href="WomanFootwear.aspx">
+
+                        <img src="ImgSlider/womansFootwearbanner.jpg" alt="womans footwear offers" style="width: 100%; height:300px">
+                                  </a>
+                        <div class="carousel-caption">
+                           
+                        </div>
+
+                              
+                    </div>
+                    <div class="item">
+                        <a href="Accesories.aspx">
+
+                        <img src="ImgSlider/Accesories_banner.jpg" alt="accesories offers" style="width: 100%; height:300px">
+                        </a>
+                        <div class="carousel-caption">
+
+
+                           
+                        </div>
                 </div>
                 <!-- Left and right controls -->
                 <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left">
@@ -121,39 +156,95 @@
     <!---Middle COntents start---->
     <hr />
     <div class="container center ">
-        <div class="row ">
-            <div class="col-lg-4">
-                <img class="img-circle " src="Mobile/iphone11.jpeg" alt="thumb" width="140" height="140" />
+        <div class="row" style="margin-bottom:25px;">
+            <div class="col-lg-4 home_category"  style="padding:15px">
+
+                <a href="Accesories.aspx">
+
+                <img class="img-circle " src="Images/accesories.jpg" alt="thumb" width="140" height="140" />
+                </a>
                 <h2>
-                    Mobiles</h2>
-                <p>
-                    Featuring a 15.49-cm (6.1) all-screen Liquid Retina LCD and a glass and aluminum
-                    design, the iPhone 11 is as beautiful as it gets. Also, the IP68 rating ensures
-                    that is water-resistant up to 2 meters for 30 minutes....</p>
-                <p>
-                    <a class="btn btn-default " href="#" role="button">View More &raquo;</a></p>
+                    Accesories</h2>
+                <p class="text-justify">
+                    Complete your outfit with our selection of accesories,We offers Watches, Sunglasses, Handbags, Scarves, Hair Accecories, Perfume and more.we have something for every style and budget.
+                   </p>
+                
+                    <a class="btn btn-default " href="Accesories.aspx" role="button">View More &raquo;</a>
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-4 home_category"  style="padding:15px">
+                <a href="MensClothing.aspx">
+
                 <img class="img-circle " src="Images/mens_clothing.jpg" alt="thumb" width="140" height="140" />
+                </a>
                 <h2>
                     Men's clothing</h2>
-                <p>
-                    Featuring a 15.49-cm (6.1) all-screen Liquid Retina LCD and a glass and aluminum
-                    design, the iPhone 11 is as beautiful as it gets. Also, the IP68 rating ensures
-                    that is water-resistant up to 2 meters for 30 minutes....</p>
-                <p>
-                    <a class="btn btn-default " href="#" role="button">View More &raquo;</a></p>
-            </div>
-            <div class="col-lg-4">
+                 <p class="text-justify">
+                
+                    We offer a variety of stylish and functional options for every occasion.We offers Tshirt, Shirt, Jeans ,Footwear and more.we have something for every style and budget. Shop now and find your new favorite outfit!
+                </p>
+                    <a class="btn btn-default " href="MensClothing.aspx" role="button">View More &raquo;</a>
+            </div>            
+
+            
+            <div class="col-lg-4"  style="padding:15px">
+                <a href="WomansClothing.aspx">
+
                 <img class="img-circle " src="Images/womens_clothing.jpg" alt="thumb" width="140" height="140" />
+                </a>
                 <h2>
                     Women's Clothings</h2>
-                <p>
-                    Featuring a 15.49-cm (6.1) all-screen Liquid Retina LCD and a glass and aluminum
-                    design, the iPhone 11 is as beautiful as it gets. Also, the IP68 rating ensures
-                    that is water-resistant up to 2 meters for 30 minutes....</p>
-                <p>
-                    <a class="btn btn-default " href="#" role="button">View More &raquo;</a></p>
+                <p class="text-justify">
+                
+                    We offer a variety of stylish and functional options for every occasion.We offers Dresses, Tops, Sarees ,Footwear and more.we have something for every style and budget. Shop now and find your new favorite outfit!
+                </p>
+                
+                    <a class="btn btn-default " href="WomansClothing.aspx" role="button">View More &raquo;</a>
+            </div>
+            </div>
+           
+        <div class="row">            
+            
+            <div class="col-lg-4 "  style="padding:15px">
+                <a href="ManFootwear.aspx">
+
+                <img class="img-circle " src="Images/mens_footwear.jpg" alt="thumb" width="140" height="140" />
+                </a>
+                <h2>
+                    Men's Footwear</h2>
+                                 <p class="text-justify">
+
+                    Step into style and step up your game with our impressive collection of men's footwear. Whether you're looking for sleek dress shoes, comfortable sneakers, or rugged boots, we have you covered.</p>
+                
+                    <a class="btn btn-default " href="#" role="button">View More &raquo;</a>
+            </div>            
+            
+            <div class="col-lg-4"  style="padding:15px">
+                <a href="WomanFootwear.aspx">
+
+                <img class="img-circle " src="Images/woman footwear.jpg"  alt="thumb" width="140" height="140" />
+                </a>
+                <h2>
+                    Woman's Footwear</h2>
+                               <p class="text-justify">
+
+                  Elevate your footwear game with our stunning collection of women's shoes. From stylish heels to comfortable flats, we have something for every occasion and every style.We have everything to up your fashion game.</p>
+                
+                    <a class="btn btn-default " href="WomanFootwear.aspx" role="button">View More &raquo;</a>
+            </div>            
+            
+            <div class="col-lg-4 home_category"  style="padding:15px">
+                <a href="Jwellery.aspx">
+                <img class="img-circle " src="Images/jwellery.jpg" alt="thumb" width="140" height="140" />
+                    </a>
+                
+                <h2>
+                    Jwellery</h2>
+                                 <p class="text-justify">
+Elevate your look with our stunning collection of jewelry. Our carefully curated selection features pieces crafted from the finest materials, designed to complement any outfit and occasion.</p>
+                
+                    
+                    <a class="btn btn-default " href="jwellery.aspx" role="button">View More &raquo;</a>
+                    
             </div>
         </div>
         <br />
@@ -169,12 +260,9 @@
                         <ItemTemplate>
                             <div class="col-sm-3 col-md-3 ">
                                 <a href="ProductView.aspx?PID=<%# Eval("PID") %>" style="text-decoration: none;">
-                                    <div class="thumbnail">
-                                        <img src="Images/ProductImages/<%# Eval("PID") %>/<%# Eval("ImageName") %><%# Eval("Extention") %>"
-                                            alt="<%# Eval("ImageName") %>" 
-                                            style="width:100%; height:300px;"
-                                            
-                                            />
+                                    
+          <div class="thumbnail" style="height:300px">              
+              <img src="Images/ProductImages/<%# Eval("PID") %>/<%# Eval("ImageName") %><%# Eval("Extention") %>" alt="<%# Eval("ImageName") %>" style="width:200px; height:200px"/>
                                         <div class="caption">
                                             <div class="probrand">
                                                 <%# Eval ("BrandName") %>
@@ -198,9 +286,8 @@
                     </asp:Repeater>
                 </div>
             </div>
-            <div class="panel-footer">
-                Buy 50 mobiles and get a gift card</div>
-        </div>
+      
+
     </div>
     </div>
     <!---Middle COntents End---->
@@ -212,7 +299,7 @@
             <div class =" alert bg-secondary p-5">
              <p class ="pull-right "><a href ="#">&nbsp; &nbsp; Back to top &nbsp; &nbsp;</a></p>
                 <p class ="pull-right "><%--<a href="SignIn.aspx"> Admin Login  </a>--%></p> 
-                <p>&copy;2022 Eshopping.in &middot; <a href ="Default.aspx">Home</a>&middot;<a href ="Products.aspx">Products</a> </p>
+                <p>&copy;2022 Eshopping.in &middot; <a href ="Default.aspx">Home</a>&middot;<a href ="Products.aspx">Products</a>&middot;<a href ="About.aspx">About Us</a> </p>
             </div>
 
         </footer>
