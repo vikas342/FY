@@ -134,32 +134,6 @@ public partial class Payment : System.Web.UI.Page
         }
     }
 
-    protected void btnPaytm_Click(object sender, EventArgs e)
-    {
-        if (Session["USERNAME"] != null)
-        {
-            string USERID = Session["USERID"].ToString();
-            string PaymentType = "Paytm";
-            string PaymentStatus = "NotPaid";
-            string EMAILID = Session["USEREMAIL"].ToString();
-            using (SqlConnection con = new SqlConnection(CS))
-            {
-                SqlCommand cmd = new SqlCommand("insert into tblPurchase values('" + USERID + "','"
-                    + hdPidSizeID.Value + "','" + hdCartAmount.Value + "','" + hdCartDiscount.Value + "','"
-                    + hdTotalPayed.Value + "','" + PaymentType + "','" + PaymentStatus + "',getdate(),'"
-                    + txtName.Text + "','" + txtAddress.Text + "','" + txtPinCode.Text + "','" + txtMobileNumber.Text + "') select SCOPE_IDENTITY()", con);
-                if (con.State == ConnectionState.Closed)
-                {
-                    con.Open();
-                }
-                Int64 PurchaseID = Convert.ToInt64(cmd.ExecuteScalar());
-            }
-        }
-        else
-        {
-            Response.Redirect("SignIn.aspx");
-        }
-    }
 
 
     public void BindCartNumber()

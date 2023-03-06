@@ -178,7 +178,6 @@
     <Content Include="js\npm.js" />
     <Content Include="Jwellery.aspx" />
     <Content Include="ManDenims.aspx" />
-    <Content Include="ManPants.aspx" />
     <Content Include="ManShirt.aspx" />
     <Content Include="ManFootwear.aspx" />
     <Content Include="MensClothing.aspx" />
@@ -196,7 +195,6 @@
     <Content Include="UserOrders.aspx" />
     <Content Include="Web.config" />
     <Content Include="WomanFootwear.aspx" />
-    <Content Include="womanLegging.aspx" />
     <Content Include="WomanSarees.aspx" />
     <Content Include="WomansClothing.aspx" />
     <Content Include="WomanTop.aspx" />
@@ -291,10 +289,6 @@
       <DependentUpon>ManDenims.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="ManPants.aspx.cs">
-      <DependentUpon>ManPants.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
     <Compile Include="ManShirt.aspx.cs">
       <DependentUpon>ManShirt.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -371,10 +365,6 @@
     </Compile>
     <Compile Include="WomanFootwear.aspx.designer.cs">
       <DependentUpon>WomanFootwear.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="womanLegging.aspx.cs">
-      <DependentUpon>womanLegging.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="WomanSarees.aspx.cs">
       <DependentUpon>WomanSarees.aspx</DependentUpon>

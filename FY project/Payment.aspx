@@ -67,6 +67,11 @@
                                 </asp:GridView>                                
                             </div>
         </div>
+        <br />
+        <br />
+        <br />
+        <br />
+
 
         <div class="col-md-3" runat="server" id="divPriceDetails">
              <div style="border-bottom: 1px solid #eaeaec;">
@@ -93,46 +98,61 @@
   <h3>Choose Payment Mode</h3>
             <hr />
             <ul class="nav nav-tabs">
-                <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#wallets">WALLETS</a></li>
+                <li class="nav-item"><a class="nav-link selcted" data-toggle="tab" href="#wallets">WALLETS</a></li>
                 <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#cards">CREDIT/DEBIT CARDS</a></li>
                 <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#cod">COD</a></li>
             </ul>
              <div class="tab-content">
-                <div id="wallets" class="tab-pane fade show active">
-                    <h3>HOME</h3>
-                    <p>Some content.</p>
-                    <asp:Button ID="btnPaytm" OnClick="btnPaytm_Click" runat="server" Text="Pay with Paytm" />
+                <div id="wallets" class="tab-pane fade  active">
+                    <h3>We accept many Wallets:</h3>
+                           <asp:Button ID="Button1" CssClass=" btn btn-info" Font-Size="Large" ValidationGroup="PaymentPage" runat="server" OnClick="BtnPlaceNPay_Click" Text="Paytm" />
+                             
+                           <asp:Button ID="Button2" CssClass=" btn btn-info" Font-Size="Large" ValidationGroup="PaymentPage" runat="server" OnClick="BtnPlaceNPay_Click" Text="Gpay" />
+                                    <asp:Button ID="Button3" CssClass=" btn btn-info" Font-Size="Large" ValidationGroup="PaymentPage" runat="server" OnClick="BtnPlaceNPay_Click" Text="RzorPay" />
+                             
+
                 </div>
                 <div id="cards" class="tab-pane fade">
-                    <h3>Menu 1</h3>
-                    <p>Some content in menu 1.</p>
+                    <h3>* We accept only Visa/Rupay Cards </h3>
+                    
+                    <form role="form" onsubmit="event.preventDefault()">
+                                <div class="form-group"> <label for="username">
+                                        <h6>Card Owner</h6>
+                                    </label> <input type="text" name="username" placeholder="Card Owner Name" required class="form-control "> </div>
+                                <div class="form-group"> <label for="cardNumber">
+                                        <h6>Card number</h6>
+                                    </label>
+                                    <div class="input-group"> <input type="text" name="cardNumber" placeholder="Valid card number" class="form-control " required>
+                                        <div class="input-group-append"> <span class="input-group-text text-muted"> <i class="fab fa-cc-visa mx-1"></i> <i class="fab fa-cc-mastercard mx-1"></i> <i class="fab fa-cc-amex mx-1"></i> </span> </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-8">
+                                        <div class="form-group"> <label><span class="hidden-xs">
+                                                    <h6>Expiration Date</h6>
+                                                </span></label>
+                                            <div class="input-group"> <input type="number" placeholder="MM" name="" class="form-control" required> <input type="number" placeholder="YY" name="" class="form-control" required> </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="form-group mb-4"> <label data-toggle="tooltip" title="Three digit CV code on the back of your card">
+                                                <h6>CVV <i class="fa fa-question-circle d-inline"></i></h6>
+                                            </label> <input type="text" required class="form-control"> </div>
+                                    </div>
+                                </div>
+                                <div class="card-footer text-center"> 
+                                    <asp:Button ID="Button5" CssClass="subscribe btn btn-primary btn-block shadow-sm" Font-Size="Large" ValidationGroup="PaymentPage" runat="server" OnClick="BtnPlaceNPay_Click" Text="Checkout" />
+                                
                 </div>
                 <div id="cod" class="tab-pane fade">
-                    <h3>Menu 2</h3>
-                    <p>Some content in menu 2.</p>
+                    <h3>Cash On Delivery</h3>
+                    <h3>Place your order and Pay using our Accepted Payments channels, Your order will be dispatched upon receiving full payment.</h3>
+                                    <asp:Button ID="Button4" CssClass=" btn btn-primary" Font-Size="Large" ValidationGroup="PaymentPage" runat="server" OnClick="BtnPlaceNPay_Click" Text="Checkout" />
+                                
                 </div>
             </div>
 
-           <div class="tab-content">
-                                <div id="PlaceNPay" class="tab-pane fade in active">
-                                    <h3>Place your order and Pay using our <a href="acceptedpayments" target="_blank">Accepted Payments</a> channels, Your order will be dispatched upon receiving full payment.</h3>
-                                    <asp:Button ID="BtnPlaceNPay" CssClass=" btn btn-info" Font-Size="Large" ValidationGroup="PaymentPage" runat="server" OnClick="BtnPlaceNPay_Click" Text="Checkout &raquo;" />
-                                </div>
-                                <div id="EasyPaisa" class="tab-pane ">
-                                    <h3 class="center1">EasyPaisa Payment Gateway Coming Soon</h3>
-                                    <h4 class="center1">Until that you can send amount @ 0311 0000193</h4>
-                                    <!--  <asp:Button ID="btnEasyPaisa" CssClass=" btn btn-success" Font-Size="Large" runat="server" Text="Pay with EasyPaisa &raquo;" /> -->
-                                </div>
-                                <div id="JazzCash" class="tab-pane fade">
-                                    <h3 class="center1">JazzCash Payment Gateway Coming Soon</h3>
-                                    <h4 class="center1">Until that you can send amount @ 0300 1888193</h4>
-                                    <!-- <asp:Button ID="btnJazzCash" CssClass="btn btn-danger" runat="server" Font-Size="Large" Text="Pay with JazzCash &raquo;" /> -->
-                                </div>
-                                <div id="Div1" class="tab-pane fade">
-                                    <h3 class="center1">Cash on Delivery - Coming Soon</h3>
-                                    <!-- <asp:Button ID="btnCOD" CssClass="btn btn-primary" runat="server" Text="CheckOut &raquo;" Font-Size="Large" /> -->
-                                </div>
-                            </div>
+         
           
         </div>
 
