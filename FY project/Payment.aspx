@@ -11,7 +11,7 @@
     <br />
     <br />
 
-    <button id="btnCart2" runat="server" class="btn btn-primary navbar-btn pull-right" onserverclick="btnCart2_ServerClick" type="button">
+    <button id="btnCart2" runat="server" class="btn btn-primary navbar-btn pull-right hide" onserverclick="btnCart2_ServerClick" type="button">
                         Cart <span id="CartBadge" runat="server" class="badge">0</span>
                     </button>
     <br />
@@ -105,17 +105,18 @@
              <div class="tab-content">
                 <div id="wallets" class="tab-pane fade  active">
                     <h3>We accept many Wallets:</h3>
-                           <asp:Button ID="Button1" CssClass=" btn btn-info" Font-Size="Large" ValidationGroup="PaymentPage" runat="server" OnClick="BtnPlaceNPay_Click" Text="Paytm" />
+                           <asp:Button ID="Button1" CssClass=" btn btn-primary" Font-Size="Large" ValidationGroup="PaymentPage" runat="server" OnClick="BtnPlaceNPay_Click" Text="Paytm" />
                              
-                           <asp:Button ID="Button2" CssClass=" btn btn-info" Font-Size="Large" ValidationGroup="PaymentPage" runat="server" OnClick="BtnPlaceNPay_Click" Text="Gpay" />
-                                    <asp:Button ID="Button3" CssClass=" btn btn-info" Font-Size="Large" ValidationGroup="PaymentPage" runat="server" OnClick="BtnPlaceNPay_Click" Text="RzorPay" />
+                           <asp:Button ID="Button2" CssClass=" btn btn-primary" Font-Size="Large" ValidationGroup="PaymentPage" runat="server" OnClick="BtnPlaceNPay_Click" Text="Gpay" />
+                                    <asp:Button ID="Button3" CssClass=" btn btn-primary" Font-Size="Large" ValidationGroup="PaymentPage" runat="server" OnClick="BtnPlaceNPay_Click" Text="RzorPay" />
                              
 
                 </div>
+
                 <div id="cards" class="tab-pane fade">
                     <h3>* We accept only Visa/Rupay Cards </h3>
                     
-                    <form role="form" onsubmit="event.preventDefault()">
+                    <form role="form">
                                 <div class="form-group"> <label for="username">
                                         <h6>Card Owner</h6>
                                     </label> <input type="text" name="username" placeholder="Card Owner Name" required class="form-control "> </div>
@@ -142,14 +143,24 @@
                                 </div>
                                 <div class="card-footer text-center"> 
                                     <asp:Button ID="Button5" CssClass="subscribe btn btn-primary btn-block shadow-sm" Font-Size="Large" ValidationGroup="PaymentPage" runat="server" OnClick="BtnPlaceNPay_Click" Text="Checkout" />
+                           
+                                    </div>
+                                    </form>
+
                                 
                 </div>
-                <div id="cod" class="tab-pane fade">
+                
+
+                  
+
+
+                <div id="cod" class="tab-pane fade out">
                     <h3>Cash On Delivery</h3>
                     <h3>Place your order and Pay using our Accepted Payments channels, Your order will be dispatched upon receiving full payment.</h3>
                                     <asp:Button ID="Button4" CssClass=" btn btn-primary" Font-Size="Large" ValidationGroup="PaymentPage" runat="server" OnClick="BtnPlaceNPay_Click" Text="Checkout" />
                                 
                 </div>
+
             </div>
 
          

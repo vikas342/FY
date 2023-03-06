@@ -7,7 +7,7 @@
     <br />
 
     <br /><br /><br />
-    <button id="btnCart2" runat="server" class="btn btn-primary navbar-btn pull-right" onserverclick="btnCart2_ServerClick" type="button">
+    <button id="btnCart2" runat="server" class="btn btn-primary navbar-btn pull-right hide" onserverclick="btnCart2_ServerClick" type="button">
                         Cart <span id="CartBadge" runat="server" class="badge">0</span>
     </button>
     <br />

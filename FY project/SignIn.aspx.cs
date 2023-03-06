@@ -43,8 +43,8 @@ public partial class SignIn : System.Web.UI.Page
             {
                 Session["USERID"] = dt.Rows[0]["Uid"].ToString();
                 Session["USEREMAIL"] = dt.Rows[0]["Email"].ToString();
-                Response.Cookies["UNAME"].Expires = DateTime.Now.AddDays(1);
-                Response.Cookies["UPWD"].Expires = DateTime.Now.AddDays(1);
+                Response.Cookies["UNAME"].Expires = DateTime.Now.AddDays(5);
+                Response.Cookies["UPWD"].Expires = DateTime.Now.AddDays(5);
 
                 if (CheckBox1 .Checked)
                 {
