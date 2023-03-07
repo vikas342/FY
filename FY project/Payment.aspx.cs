@@ -303,7 +303,7 @@ public partial class Payment : System.Web.UI.Page
                 myCmd.Parameters.AddWithValue("@Status", "Delivered");
                 if (con.State == ConnectionState.Closed) { con.Open(); }
                 Int64 OrderProID = Convert.ToInt64(myCmd.ExecuteScalar());
-                
+
                 //--------------------------
                 myCmd = new SqlCommand("update tblProductSizeQuantity set Quantity=Quantity-@Qty where PID=@PID ", con);
 
@@ -363,19 +363,19 @@ public partial class Payment : System.Web.UI.Page
     //                   lblTotalQuantity.Text = "Qty in Stock " + ds.Tables[0].Rows[0]["Quantity"].ToString() + " KG";
 
     //               }
-                            
 
-                        
-                    
+
+
+
 
     //                using (SqlConnection con = new SqlConnection(CS))
     //                {
     //                    SqlCommand cmd = new SqlCommand("update tblProductSizeQuantity set Quantity=Quantity-@Qty where PID=@PID ", con);
-                        
+
     //                        cmd.CommandType = CommandType.Text;
     //                        cmd.Parameters.AddWithValue("@Qty");
     //                        cmd.ExecuteNonQuery();
-                        
+
     //                }
     //            }
     //        }
