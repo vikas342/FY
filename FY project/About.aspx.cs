@@ -13,6 +13,6 @@ public partial class About : System.Web.UI.Page
     }
     protected void Button1_Click(object sender, EventArgs e)
     {
-        Response.Redirect("SignIn.aspx");
+        Response.Redirect("contact.aspx");
     }
 }

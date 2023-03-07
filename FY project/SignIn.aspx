@@ -33,13 +33,10 @@
 
 
                 </div>
-                <div class ="navbar-collapse collapse">
+                  <div class ="navbar-collapse collapse">
                     <ul class ="nav navbar-nav navbar-right">
                         <li ><a href ="Default.aspx">Home</a> </li>
-                         <li ><a href="About.aspx">About</a> </li>
-                        <li ><a href ="#">Contact US</a> </li>
-                       <%-- <li ><a href ="#">Blog-</a> </li>--%>
-                        <li class ="drodown">
+                             <li class ="drodown">
                             <a href ="#" class ="dropdown-toggle" data-toggle="dropdown">Products<b class ="caret"></b></a>
                             <ul class ="dropdown-menu ">
 
@@ -58,8 +55,12 @@
                             </ul>
 
                         </li>
-                        <li ><a href ="SignUp.aspx">SignUp</a> </li>
-                        <li class ="active"><a href ="SignIn.aspx">SignIn</a> </li>
+                        <li ><a href ="Contact.aspx">Contact US</a> </li>
+                         <li ><a href ="About.aspx">About Us</a> </li>
+                   
+
+                        <li><a href ="SignUp.aspx">SignUp</a> </li>
+                        <li ><a href ="SignIn.aspx">SignIn</a> </li>
                     </ul>
                 </div>
             </div>
@@ -156,7 +157,7 @@
             <div class =" alert bg-secondary p-5">
              <p class ="pull-right "><a href ="#">&nbsp; &nbsp; Back to top &nbsp; &nbsp;</a></p>
                 <p class ="pull-right "><%--<a href="SignIn.aspx"> Admin Login  </a>--%></p> 
-                <p>&copy;2022 Eshopping.in &middot; <a href ="Default.aspx">Home</a>&middot;<a href ="Default.aspx">Products</a> </p>
+                <p>&copy;2022 Eshopping.in &middot; <a href ="Default.aspx">Home</a>&middot;<a href ="Contact.aspx">Contact Us</a>&middot;<a href ="About.aspx">About Us</a> </p>
             </div>
 
         </footer>

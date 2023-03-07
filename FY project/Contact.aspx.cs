@@ -38,7 +38,7 @@ namespace FY_project
                 }
 
                     Response.Write("<script> alert('Message sent We will contact you soon');  </script>");
-                Response.Redirect("~/Default.aspx");
+                Response.Redirect("~/UserHome.aspx");
             }
             else
             {
@@ -52,7 +52,7 @@ namespace FY_project
         {
             if (txtUname.Text == "")
             {
-                Response.Write("<script> alert('username not valid');  </script>");
+                Response.Write("<script> alert('Plaese enter your name ');  </script>");
                 txtUname.Focus();
 
                 return false;
@@ -60,13 +60,13 @@ namespace FY_project
          
             else if (txtEmail.Text == "")
             {
-                Response.Write("<script> alert('Email not valid');  </script>");
+                Response.Write("<script> alert('Please enter valid email');  </script>");
                 txtEmail.Focus();
                 return false;
             }
             else if (txtmsg.Text == "")
             {
-                Response.Write("<script> alert('Message not valid');  </script>");
+                Response.Write("<script> alert('Please enter message');  </script>");
                 txtmsg.Focus();
                 return false;
             }

@@ -45,12 +45,8 @@
                 </div>
                 <div class ="navbar-collapse collapse">
                     <ul class ="nav navbar-nav navbar-right">
-                        <li><a href ="UserHome.aspx">Home</a> </li>
+                        <li> <a href ="UserHome.aspx">Home</a> </li>
                         <li><a href ="UserOrders.aspx">Orders</a> </li>
-
-                         <li ><a href ="About.aspx">About</a> </li>
-                        <%--<li ><a href ="#">Contact US</a> </li>--%>
-                        <%--<li ><a href ="#">Blog-</a> </li>--%>
                         <li class ="drodown">
                             <a href ="#" class ="dropdown-toggle" data-toggle="dropdown">Products<b class ="caret"></b></a>
                             <ul class ="dropdown-menu ">
@@ -71,6 +67,11 @@
                             </ul>
 
                         </li>
+                        <li><a href ="Contact.aspx">Contact Us</a> </li>
+
+                         <li ><a href ="About.aspx">About Us</a> </li>
+
+
                         <li>
                             <button id="btnCart" class="btn btn-primary navbar-btn" type="button">
                                 Cart<span class="badge" id="pCount" runat="server"></span>
@@ -94,7 +95,7 @@
      </div>
 
                <!---image slider---->
-        <div class="container">
+       <div class="container">
             <h2>
                 Carousel Example</h2>
             <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -103,27 +104,62 @@
                     <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
                     <li data-target="#myCarousel" data-slide-to="1"></li>
                     <li data-target="#myCarousel" data-slide-to="2"></li>
+                    <li data-target="#myCarousel" data-slide-to="3"></li>
+                    <li data-target="#myCarousel" data-slide-to="4"></li>
+
                 </ol>
                 <!-- Wrapper for slides -->
                 <div class="carousel-inner">
                     <div class="item active">
-                        <img src="ImgSlider/bannner2.gif" alt="Women's colothing offer" style="width: 100%; height:400px;">
+                        <a href="WomansClothing.aspx">
+                        <img src="ImgSlider/bannner2.gif" alt="Women's colothing offer" style="width: 100%; height:300px;">
+                            </a>
                         <div class="carousel-caption">
                           >
                         </div>
                     </div>
                     <div class="item">
-                        <img src="ImgSlider/banner1.jpg" alt="Men's clothing offers" style="width: 100%; height:400px;">
+                        <a href="MensClothing.aspx">
+
+
+                        <img src="ImgSlider/banner1.jpg" alt="Men's clothing offers" style="width: 100%; height:300px;">
+                        </a>
                         <div class="carousel-caption">
                             
                         </div>
                     </div>
                     <div class="item">
-                        <img src="ImgSlider/banner3.jpg" alt="mobile offers" style="width: 100%; height:400px">
+                        <a href="ManFootwear.aspx">
+
+                        <img src="ImgSlider/footwear_banner2.jpg" alt="mens footwear offers" style="width: 100%; height:300px">
+                        </a>
                         <div class="carousel-caption">
                            
                         </div>
+
+                              
                     </div>
+                              <div class="item">
+                                  <a href="WomanFootwear.aspx">
+
+                        <img src="ImgSlider/womansFootwearbanner.jpg" alt="womans footwear offers" style="width: 100%; height:300px">
+                                  </a>
+                        <div class="carousel-caption">
+                           
+                        </div>
+
+                              
+                    </div>
+                    <div class="item">
+                        <a href="Accesories.aspx">
+
+                        <img src="ImgSlider/Accesories_banner.jpg" alt="accesories offers" style="width: 100%; height:300px">
+                        </a>
+                        <div class="carousel-caption">
+
+
+                           
+                        </div>
                 </div>
                 <!-- Left and right controls -->
                 <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left">
@@ -132,6 +168,8 @@
                     </span><span class="sr-only">Next</span> </a>
             </div>
         </div>
+        <!---image slider End---->
+    </div>
         <!---image slider End---->
     </div>
     <!---Middle COntents start---->

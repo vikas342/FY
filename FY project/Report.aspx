@@ -31,10 +31,8 @@
              
              </div>
 
-             <div class="form-group">
-                 &nbsp;&nbsp;&nbsp; <asp:Button ID="btnExportExcel1" CssClass="btn btn-danger" 
-                     runat="server" Text="Export Excel" onclick="btnExportExcel1_Click" />
-             </div>
+      
+
           </div>
       
       
@@ -61,10 +59,7 @@
              
              </div>
 
-             <div class="form-group">
-                 <asp:Button ID="btnExportExl2" CssClass="btn btn-danger" runat="server" 
-                     Text="Export Excel" onclick="btnExportExl2_Click" />
-             </div>
+
           </div>
       
       
