@@ -113,37 +113,31 @@ namespace FY_project
             }
         }
 
-
         protected void txtFilterGrid1Record_TextChanged(object sender, EventArgs e)
         {
             if (txtFilterGrid1Record.Text != string.Empty)
             {
+                SqlConnection con = new SqlConnection(CS);
+                con.Open();
+                string qr = "select A.*,B.*,C.Name ,A.PPrice-A.PSelPrice as DiscAmount,B.Name as ImageName, C.Name as BrandName from tblProducts A inner join tblBrands C on C.BrandID =A.PBrandID  cross apply( select top 1 * from tblProductImages B where B.PID= A.PID order by B.PID desc )B where  A.PName like '" + txtFilterGrid1Record.Text + "%' order by A.PID desc";
+                SqlDataAdapter da = new SqlDataAdapter(qr, con);
+                string text = ((TextBox)sender).Text;
+                DataSet ds = new DataSet();
+                da.Fill(ds);
+                if (ds.Tables[0].Rows.Count > 0)
+                {
+                    rptrProducts.DataSource = ds.Tables[0];
+                    rptrProducts.DataBind();
+                }
+                else
+                {
 
-            }
-
-            SqlConnection con = new SqlConnection(CS);
-            con.Open();
-            string qr = "select A.*,B.*,C.Name ,A.PPrice-A.PSelPrice as DiscAmount,B.Name as ImageName, C.Name as BrandName from tblProducts A inner join tblBrands C on C.BrandID =A.PBrandID inner join tblCategory as t2 on t2.CatID=A.PCategoryID cross apply( select top 1 * from tblProductImages B where B.PID= A.PID order by B.PID desc )B where t2.CatName='saree'  Or t2.CatName='Saree' or t2.CatName='Kurti' or t2.CatName='kurti' or t2.CatName='Top' or t2.CatName='Slawar' AND A.PName like '" + txtFilterGrid1Record.Text + "%' order by A.PID desc";
-            SqlDataAdapter da = new SqlDataAdapter(qr, con);
-            string text = ((TextBox)sender).Text;
-            DataSet ds = new DataSet();
-            da.Fill(ds);
-            if (ds.Tables[0].Rows.Count > 0)
-            {
-                rptrProducts.DataSource = ds.Tables[0];
-                rptrProducts.DataBind();
+                }
             }
             else
             {
-
+                BindProductRepeater();
             }
-
-
-
-
-
-
-
 
         }
     }

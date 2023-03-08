@@ -65,11 +65,12 @@ namespace FY_project
                         rptrProducts.DataBind();
                         if (dt.Rows.Count <= 0)
                         {
-                            // Label1.Text = "Sorry! Currently no products in this category.";
+                            Label1.Text = "You haven't order yet  </br></br></br></br></br></br></br></br></br></br></br></br></br>";
+                            
                         }
                         else
                         {
-                            //Label1.Text = "Showing All Products";
+                           Label1.Text = "Showing All Products";
                         }
                     }
                 }

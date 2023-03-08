@@ -1,7 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/User.master" AutoEventWireup="true" CodeFile="ManTshirt.aspx.cs" Inherits="ManTshirt" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
-<title>man's Pant</title>
+<title>man's tshirt</title>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 

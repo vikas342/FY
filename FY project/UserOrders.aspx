@@ -25,6 +25,8 @@
       <div class="panel-heading">Orders</div>
       <div class="panel-body">
      
+                        <asp:Label ID="Label1" runat="server"></asp:Label>
+
 
 
   <asp:Repeater ID="rptrProducts"  runat="server">
@@ -45,6 +47,8 @@
                                                    <br />
                                                    <br />
 
+                        <asp:Label ID="Label1" runat="server" Text="Showing All Products"></asp:Label>
+                                                   
 
                                                     <div class="probrand"><%# Eval ("pname") %>  </div>
                                                     <div>Total ammount : <%# Eval ("Total","{0:c}") %> </div> 
