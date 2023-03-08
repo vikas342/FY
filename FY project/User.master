@@ -16,6 +16,14 @@
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap" rel="stylesheet">
     <script>
 
         $(document).ready(function myfunction() {
@@ -43,11 +51,17 @@
                         <span class ="icon-bar"></span>
 
                     </button>
-                    <a class ="navbar-brand" href ="UserHome.aspx" ><span >
-                    <img src="Images/Eshopping.png" style="width:70px" alt="Shopppy" height ="30" /></span>Shopppy</a>
 
+                          <a class="navbar-brand" href="UserHome.aspx" style="background: #121FCF;
+background: linear-gradient(to top right, #121FCF 40%, #CF1512 60%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent; font-size:25px ;font-weight:bolder; font-family: 'Sriracha', cursive;"><span>
+                       <img src="Images/Eshopping.png" style="width:70px" alt="Shopppy" height ="30" /></span>Shopppy</a>
+   
                 </div>
-                <div class ="navbar-collapse collapse">
+
+                
+                <div class="navbar-collapse collapse text-center" style="font-family: 'Roboto', sans-serif; font-size:15px; font-weight:bolder">
                     <ul class ="nav navbar-nav navbar-right">
                          <li ><a href ="UserHome.aspx">Home</a> </li>
                          <li ><a href="UserOrders.aspx">Orders</a> </li>

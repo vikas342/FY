@@ -13,6 +13,13 @@
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap" rel="stylesheet">
 
 </head>
 <body>
@@ -28,12 +35,18 @@
                         <span class ="icon-bar"></span>
 
                     </button>
-                    <a class ="navbar-brand" href ="Default.aspx" ><span >                    
-                        <img src="Images/Eshopping.png" style="width:70px" alt="Shopppy" height ="30" /></span>Shopppy</a>
+                    <a class ="navbar-brand" href ="Default.aspx" > 
 
+                          <a class="navbar-brand" href="Default.aspx" style="background: #121FCF;
+background: linear-gradient(to top right, #121FCF 40%, #CF1512 60%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent; font-size:25px ;font-weight:bolder; font-family: 'Sriracha', cursive;"><span>
+                       <img src="Images/Eshopping.png" style="width:70px" alt="Shopppy" height ="30" /></span>Shopppy</a>
+   
                 </div>
-                <div class ="navbar-collapse collapse">
-                    <ul class ="nav navbar-nav navbar-right">
+                
+                <div class="navbar-collapse collapse text-center" style="font-family: 'Roboto', sans-serif; font-size:15px; font-weight:bolder">
+                <ul class ="nav navbar-nav navbar-right">
                         <li ><a href ="Default.aspx">Home</a> </li>
                              <li class ="drodown">
                             <a href ="#" class ="dropdown-toggle" data-toggle="dropdown">Products<b class ="caret"></b></a>
@@ -159,10 +172,10 @@
 
 
         <!---Footer COntents Start here---->
-        <hr />
 
         <footer class="footer-pos">
             <div class ="container ">
+        <hr />
                <p class ="pull-right "><a href ="#">&nbsp; &nbsp; Back to top &nbsp; &nbsp;</a></p>
                 <p class ="pull-right "><%--<a href="SignIn.aspx"> Admin Login  </a>--%></p> 
                 <p>&copy;2022 Eshopping.in &middot; <a href ="Default.aspx">Home</a>&middot;<a href ="Contact.aspx">Contact Us</a>&middot;<a href ="About.aspx">About Us</a> </p>

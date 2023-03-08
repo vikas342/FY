@@ -26,6 +26,23 @@
 
     </script>
 
+    <style>
+        
+
+    #cat_div:hover{
+        background-color:lightgray;
+        border-radius:25px;
+        
+    }
+    </style>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <form id="form1" runat="server">
@@ -40,10 +57,16 @@
                         <span class ="icon-bar"></span>
 
                     </button>
-                    <a class ="navbar-brand" href ="UserHome.aspx" ><span ><img src="Images/Eshopping.png" style="width:70px" alt="Shopppy" height ="30" /></span>Shopppy</a>
-
+                      <a class="navbar-brand" href="UserHome.aspx" style="background: #121FCF;
+background: linear-gradient(to top right, #121FCF 40%, #CF1512 60%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent; font-size:25px ;font-weight:bolder; font-family: 'Sriracha', cursive;"><span>
+                       <img src="Images/Eshopping.png" style="width:70px" alt="Shopppy" height ="30" /></span>Shopppy</a>
+   
                 </div>
-                <div class ="navbar-collapse collapse">
+                
+                
+                <div class="navbar-collapse collapse text-center" style="font-family: 'Roboto', sans-serif; font-size:15px; font-weight:bolder">
                     <ul class ="nav navbar-nav navbar-right">
                         <li> <a href ="UserHome.aspx">Home</a> </li>
                         <li><a href ="UserOrders.aspx">Orders</a> </li>
@@ -91,11 +114,12 @@
                     </ul>
                 </div>
             </div>
-        </div>
+        
      </div>
 
                <!---image slider---->
-       <div class="container">
+        <div class="container-fluid">
+
             <h2>
                 Carousel Example</h2>
             <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -174,9 +198,11 @@
     </div>
     <!---Middle COntents start---->
     <hr />
+        
+        
     <div class="container center ">
         <div class="row" style="margin-bottom:25px;">
-            <div class="col-lg-4 home_category"  style="padding:15px">
+            <div class="col-lg-4 "  style="padding:15px" id="cat_div">
 
                 <a href="Accesories.aspx">
 
@@ -190,7 +216,9 @@
                 
                     <a class="btn btn-default " href="Accesories.aspx" role="button">View More &raquo;</a>
             </div>
-            <div class="col-lg-4 home_category"  style="padding:15px">
+
+            <div class="col-lg-4 home_category"  style="padding:15px" id="cat_div">
+
                 <a href="MensClothing.aspx">
 
                 <img class="img-circle " src="Images/mens_clothing.jpg" alt="thumb" width="140" height="140" />
@@ -204,8 +232,8 @@
                     <a class="btn btn-default " href="MensClothing.aspx" role="button">View More &raquo;</a>
             </div>            
 
-            
-            <div class="col-lg-4"  style="padding:15px">
+                        <div class="col-lg-4 home_category"  style="padding:15px" id="cat_div">
+
                 <a href="WomansClothing.aspx">
 
                 <img class="img-circle " src="Images/womens_clothing.jpg" alt="thumb" width="140" height="140" />
@@ -222,8 +250,8 @@
             </div>
            
         <div class="row">            
-            
-            <div class="col-lg-4 "  style="padding:15px">
+                        <div class="col-lg-4 home_category"  style="padding:15px" id="cat_div">
+
                 <a href="ManFootwear.aspx">
 
                 <img class="img-circle " src="Images/mens_footwear.jpg" alt="thumb" width="140" height="140" />
@@ -237,7 +265,9 @@
                     <a class="btn btn-default " href="#" role="button">View More &raquo;</a>
             </div>            
             
-            <div class="col-lg-4"  style="padding:15px">
+            <div class="col-lg-4 home_category"  style="padding:15px" id="cat_div">
+
+
                 <a href="WomanFootwear.aspx">
 
                 <img class="img-circle " src="Images/woman footwear.jpg"  alt="thumb" width="140" height="140" />
@@ -251,7 +281,9 @@
                     <a class="btn btn-default " href="WomanFootwear.aspx" role="button">View More &raquo;</a>
             </div>            
             
-            <div class="col-lg-4 home_category"  style="padding:15px">
+
+            <div class="col-lg-4 home_category"  style="padding:15px" id="cat_div">
+
                 <a href="Jwellery.aspx">
                 <img class="img-circle " src="Images/jwellery.jpg" alt="thumb" width="140" height="140" />
                     </a>
@@ -269,10 +301,18 @@ Elevate your look with our stunning collection of jewelry. Our carefully curated
         <br />
 
         <br />
+        </div>
+        
+        <div class="container-fluid">
+                            <img src="Images/HOLISALE.png" alt="thumb" width="100%"  height="300px"/>
+
+        <br />
+        <br />
+
 
         <div class="panel panel-primary">
             <div class="panel-heading">
-                BLACK FRIDAY DEAL</div>
+                HOLI SPECIAL SALE UPTO 50% OFF</div>
             <div class="panel-body">
                 <div class="row" style="padding-top: 50px">
                     <asp:Repeater ID="rptrProducts" runat="server">
@@ -305,10 +345,13 @@ Elevate your look with our stunning collection of jewelry. Our carefully curated
                     </asp:Repeater>
                 </div>
             </div>
-          
+      
+
     </div>
     </div>
-    <!---Middle COntents End---->
+    
+        
+        <!---Middle COntents End---->
     
 
 
