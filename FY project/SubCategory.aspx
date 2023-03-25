@@ -15,8 +15,8 @@
                     <div class ="col-md-3 ">
 
                         <asp:DropDownList ID="ddlMainCatID" CssClass ="form-control" runat="server"></asp:DropDownList>
-                        <asp:RequiredFieldValidator ID="RequiredFieldValidatorMainCatID" runat="server" CssClass ="text-danger " ErrorMessage="*plz Enter Main CategoryID" ControlToValidate="ddlMainCatID" ForeColor="Red"></asp:RequiredFieldValidator>
-                    </div>
+                   
+                        </div>
                 </div>
 
 
@@ -25,8 +25,8 @@
                     <div class ="col-md-3 ">
 
                         <asp:TextBox ID="txtSubCategory" CssClass="form-control" runat="server"></asp:TextBox>
-                        <asp:RequiredFieldValidator ID="RequiredFieldValidatortxtSubCategoryName" runat="server" CssClass ="text-danger " ErrorMessage="*plz Enter SubCategory" ControlToValidate="txtSubCategory" ForeColor="Red"></asp:RequiredFieldValidator>
-                    </div>
+                  
+                        </div>
                 </div>
                 
 
@@ -35,7 +35,7 @@
                     <div class ="col-md-2 "> </div>
                     <div class ="col-md-6 ">
 
-                        <asp:Button ID="btnAddSubCategory" CssClass ="btn btn-success " runat="server" Text="Add SubCategory" OnClick="btnAddSubCategory_Click"    />
+                        <asp:Button ID="btnAddSubCategory" CssClass ="btn btn-primary " runat="server" Text="Add SubCategory" OnClick="btnAddSubCategory_Click"    />
                         
                     </div>
                 </div>
@@ -46,7 +46,7 @@
          <h1>Sub Categories</h1>
         <hr />
 
- <div class="panel panel-default">
+ <div class="panel panel-primary">
 
                <div class="panel-heading"> All Sub Categories</div>
 
@@ -77,8 +77,8 @@
                     <th> <%# Eval("SubCatID") %> </th>
                     <td><%# Eval("SubCatName") %>   </td>
                  <td><%# Eval("CatName") %>   </td>
+                                     <td><a href="EditSubCategory.aspx">Edit</a></td>
 
-                    <td>Edit</td>
                 </tr>
          </ItemTemplate>
 

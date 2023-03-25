@@ -19,8 +19,8 @@
         
 
 
-        <div class="col-md-9">
-             <div class="form-horizontal">
+        <div class=" col-md-9">
+             <div class=" form-horizontal">
                 <h3>Delivery Address</h3>
                 <hr />
                 <div class="form-group">
@@ -35,14 +35,17 @@
                 </div>
                 <div class="form-group">
                     <asp:Label ID="Label3" runat="server" CssClass="control-label" Text="Pin Code"></asp:Label>
-                    <asp:TextBox ID="txtPinCode" CssClass="form-control" runat="server"></asp:TextBox>
-                    <asp:RequiredFieldValidator ID="RequiredFieldValidator2" CssClass="text-danger" runat="server" ErrorMessage="This field is Required !" ControlToValidate="txtPinCode"></asp:RequiredFieldValidator>
+                    <asp:TextBox ID="txtPinCode" CssClass="form-control" runat="server" MaxLength="6" ></asp:TextBox>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator2" CssClass="text-danger"  runat="server" ErrorMessage="This field is Required !" ControlToValidate="txtPinCode"></asp:RequiredFieldValidator>
                 </div>
                 <div class="form-group">
                     <asp:Label ID="Label4" runat="server" CssClass="control-label" Text="Mobile Number"></asp:Label>
-                    <asp:TextBox ID="txtMobileNumber" CssClass="form-control" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="txtMobileNumber" CssClass="form-control" runat="server"  min="6300000000" max="9999999999" TextMode="Number"></asp:TextBox>
                     <asp:RequiredFieldValidator ID="RequiredFieldValidator3" CssClass="text-danger" runat="server" ErrorMessage="This field is Required !" ControlToValidate="txtMobileNumber"></asp:RequiredFieldValidator>
                 </div>
+
+               
+
             </div>
 
              <div>
@@ -95,15 +98,41 @@
         </div>
 
         <div class="col-md-12">
-  <h3>Choose Payment Mode</h3>
+  <h3>Choose Payment Mode: </h3>
+
+
+            
+
             <hr />
+
+
+
+
+                        <asp:Button ID="btnAdd2" CssClass ="btn btn-primary" runat="server" OnClick="BtnPlaceNPay_Click" Text="Cash On Delivery"  style="margin:10px"/>
+            
+
+                        <asp:Button ID="btnAdd" CssClass ="btn btn-primary " runat="server" OnClick="Btnpaytm_Click" Text="Paytm"  style="margin:10px"/>
+            
+
+                        <asp:Button ID="btnAdd3" CssClass ="btn btn-primary  " runat="server" OnClick="BtnAmazonPay_Click" Text="Amazon Pay"  style="margin:10px"/>
+          
+
+
+            
+            
+
+
+
+
+                
+            <!--
             <ul class="nav nav-tabs">
-                <li class="nav-item"><a class="nav-link selcted" data-toggle="tab" href="#wallets">WALLETS</a></li>
+                <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#wallets">WALLETS</a></li>
                 <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#cards">CREDIT/DEBIT CARDS</a></li>
                 <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#cod">COD</a></li>
             </ul>
              <div class="tab-content">
-                <div id="wallets" class="tab-pane fade  active">
+                <div id="wallets" class="tab-pane fade  ">
                     <h3>We accept many Wallets:</h3>
                            <asp:Button ID="Button1" CssClass=" btn btn-primary" Font-Size="Large" ValidationGroup="PaymentPage" runat="server" OnClick="BtnPlaceNPay_Click" Text="Paytm" />
                              
@@ -164,12 +193,17 @@
 
             </div>
 
-         
-          
+         -->
         </div>
 
 
     </div>
+    <br />
+    <br />
+    <br />
+
+    <br />
+
 
 </asp:Content>
 

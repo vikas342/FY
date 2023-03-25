@@ -57,6 +57,9 @@ namespace FY_project
                 using (SqlCommand cmd = new SqlCommand("procBindAllProducts13", con))
                 {
                     cmd.CommandType = CommandType.StoredProcedure;
+
+                    string UserIDD = Session["USERID"].ToString();
+                    cmd.Parameters.AddWithValue("@UserID", UserIDD);
                     using (SqlDataAdapter sda = new SqlDataAdapter(cmd))
                     {
                         DataTable dt = new DataTable();
@@ -70,7 +73,7 @@ namespace FY_project
                         }
                         else
                         {
-                           Label1.Text = "Showing All Products";
+                           Label1.Text = "";
                         }
                     }
                 }

@@ -41,7 +41,7 @@
 background: linear-gradient(to top right, #121FCF 40%, #CF1512 60%);
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;font-size:25px ;font-weight:bolder; font-family: 'Sriracha', cursive;"><span >
-                    <img src="Images/Eshopping.png" style="width:70px" alt="Shopppy" height ="30" /></span>Shopppy</a>
+                    <img src="Images/Eshopping.png" style="width:70px" alt="Shopppy" height ="30" /></span>SHOPBLINK</a>
 
                 </div>                
                 
@@ -49,15 +49,8 @@ background: linear-gradient(to top right, #121FCF 40%, #CF1512 60%);
                 <div class="navbar-collapse collapse text-center" style="font-family: 'Roboto', sans-serif; font-size:15px; font-weight:bolder">
                 <ul class ="nav navbar-nav navbar-right">
                         <li ><a href ="AdminHome.aspx">Home</a> </li>
-                          <li class ="drodown">
-                            <a href ="#" class ="dropdown-toggle" data-toggle="dropdown">Products<b class ="caret"></b></a>
-                            <ul class ="dropdown-menu ">
-                                
                                 <li> <a href ="AddProduct.aspx">Add Product</a></li>
-                               
-                            </ul>
-
-                        </li>
+                       
                         <li class ="drodown" >
                                      <a href ="#" class ="dropdown-toggle" data-toggle="dropdown">Manage <b class ="caret"></b></a> 
                                      <ul class ="dropdown-menu">
@@ -75,7 +68,7 @@ background: linear-gradient(to top right, #121FCF 40%, #CF1512 60%);
                                          <li ><a href="Report.aspx">Report</a> </li>
                                       </ul>
                         </li>
-                        <li ><a href ="Contact.aspx">Contact US</a> </li>
+                        <li ><a href ="admin_contact.aspx">Contact Us</a> </li>
                          <li ><a href="AdminAbout.aspx">About Us</a> </li>
                       
 
@@ -104,12 +97,12 @@ background: linear-gradient(to top right, #121FCF 40%, #CF1512 60%);
     </div>
     </form>
      <!---Footer COntents Start here---->
-        <hr />
+        <!--    <hr />  -->
         <footer>
             <div class ="container  alert bg-secondary">
                 <p class ="pull-right "><a href ="#">&nbsp; &nbsp; Back to top &nbsp; &nbsp;</a></p>
                 <p class ="pull-right "><%--<a href="SignIn.aspx"> User Login  </a>--%></p> 
-                            <p>&copy;2020 Eshopping.in &middot; <a href ="AdminHome.aspx">Home</a>&middot;<a href ="AddProduct.aspx">Add Product</a>&middot;<a href ="Contact.aspx">Contact Us</a>&middot;<a href ="AdminAbout.aspx">About Us</a> </p>
+                            <p>&copy;2023 Shopblink.in &middot; <a href ="AdminHome.aspx">Home</a>&middot;<a href ="AddProduct.aspx">Add Product</a>&middot;<a href ="admin_contact.aspx">Contact Us</a>&middot;<a href ="AdminAbout.aspx">About Us</a> </p>
          
 </div>
 

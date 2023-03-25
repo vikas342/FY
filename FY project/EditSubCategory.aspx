@@ -2,8 +2,12 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
     <div class=" container">
-<br /><br /><br /><br /><br /><br />
-<div class="well-sm"><h3 class="alert-danger text-center">Edit Sub Category</h3></div>
+<br /><br /><br /><br />
+        
+    <div class="panel panel-primary">
+      <div class="panel-heading">Edit SubCategory</div>
+      <div class="panel-body">
+
     <div class="row">
         <div class="col-md-8">
            <div class="row">
@@ -34,7 +38,7 @@
         <div class="col-md-4">
         <div class="row">
                 <div class="col-md-12">
-                <h4 class="alert-info text-center"> All Category</h4>
+                <h4 class="alert-info text-center" style="padding:20px"> All Category</h4>
                 <br />
                  <asp:TextBox ID="txtFilterGrid1Record" style="border:2px solid blue" CssClass="form-control" runat="server" placeholder="Search Category...." onkeyup="Search_Gridview(this)"></asp:TextBox>
                 <hr />
@@ -47,6 +51,10 @@
         </div>
     </div>
 </div>
+        </div>
+        </div>
+
+       
 
 <script type="text/javascript">
     function Search_Gridview(strKey) {
@@ -68,5 +76,12 @@
         }
     }  
         </script>
+
+    
+    <br />
+    <br />
+    <br />
+    <br />
+
 </asp:Content>
 

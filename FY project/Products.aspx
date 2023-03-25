@@ -25,13 +25,14 @@
     <div class="panel panel-primary">
       <div class="panel-heading">All products</div>
       <div class="panel-body">
-    <div class="row">
-
-     <asp:TextBox ID="txtFilterGrid1Record" CssClass="form-control" runat="server" 
+          <asp:TextBox ID="txtFilterGrid1Record" CssClass="form-control" runat="server" 
               placeholder="Search Products...." AutoPostBack="true" 
               ontextchanged="txtFilterGrid1Record_TextChanged" ></asp:TextBox>
+    <div class="row">
+
+     
       <br />
-      <hr />
+      
 
        <asp:repeater ID="rptrProducts" runat="server">
            <ItemTemplate>

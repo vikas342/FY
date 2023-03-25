@@ -94,7 +94,7 @@ public partial class Cart : System.Web.UI.Page
                 }
                 else
                 {
-                    h4NoItems.InnerText = "Your Shopping Cart is Empty.";
+                    h5NoItems.InnerText = "Your Shopping Cart is Empty.";
                     divAmountSect.Visible = false;
 
                 }

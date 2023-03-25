@@ -56,7 +56,7 @@
 background: linear-gradient(to top right, #121FCF 40%, #CF1512 60%);
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent; font-size:25px ;font-weight:bolder; font-family: 'Sriracha', cursive;"><span>
-                       <img src="Images/Eshopping.png" style="width:70px" alt="Shopppy" height ="30" /></span>Shopppy</a>
+                       <img src="Images/Eshopping.png" style="width:70px" alt="Shopppy" height ="30" /></span>SHOPBLINK</a>
    
                 </div>
 
@@ -86,7 +86,7 @@ background: linear-gradient(to top right, #121FCF 40%, #CF1512 60%);
 
                         </li>
 
-                        <li ><a href ="Contact.aspx">Contact US</a> </li>
+                        <li ><a href ="usr_contact.aspx" >Contact Us</a> </li>
                          <li id="about"><a href="About.aspx">About Us</a> </li>
 
                         
@@ -120,13 +120,14 @@ background: linear-gradient(to top right, #121FCF 40%, #CF1512 60%);
     </div>
     </form>
      <!---Footer COntents Start here---->
-        <hr />
+
+       <!-- <hr /> -->
         <footer>
             <div class ="container alert bg-secondary">
              <p class ="pull-right "><a href ="#">&nbsp; &nbsp; Back to top &nbsp; &nbsp;</a></p>
             <p class ="pull-right "><%-- <a href="SignIn.aspx">  Login  --%></p> 
                 
-                <p>&copy;2020 Eshopping.in &middot; <a href ="UserHome.aspx">Home</a>&middot;<a href ="Products.aspx">Products</a>&middot;<a href ="Contact.aspx">Contact Us</a>&middot;<a href ="About.aspx">About Us</a> </p>
+                <p>&copy;2023 Shopblink.in &middot; <a href ="UserHome.aspx">Home</a>&middot;<a href ="Products.aspx">Products</a>&middot;<a href ="usr_contact.aspx">Contact Us</a>&middot;<a href ="About.aspx">About Us</a> </p>
             
 
             </div>

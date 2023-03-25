@@ -53,7 +53,7 @@
 background: linear-gradient(to top right, #121FCF 40%, #CF1512 60%);
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent; font-size:25px ;font-weight:bolder; font-family: 'Sriracha', cursive;"><span>
-                       <img src="Images/Eshopping.png" style="width:70px" alt="Shopppy" height ="30" /></span>Shopppy</a>
+                       <img src="Images/Eshopping.png" style="width:70px" alt="Shopppy" height ="30" /></span>SHOPBLINK</a>
    
 
                 </div>
@@ -78,7 +78,8 @@ background: linear-gradient(to top right, #121FCF 40%, #CF1512 60%);
                             </ul>
 
                         </li>
-                        <li><a href="Contact.aspx">Contact US</a> </li>
+                        <li ><a href ="usr_contact.aspx">Contact Us</a> </li>
+
                         <li><a href="About.aspx">About Us</a> </li>
  
 
@@ -156,7 +157,8 @@ background: linear-gradient(to top right, #121FCF 40%, #CF1512 60%);
                     <div class="item">
                         <a href="Accesories.aspx">
 
-                        <img src="ImgSlider/Accesories_banner.jpg" alt="accesories offers" style="width: 100%; height:300px">
+                        <img src="ImgSlider/acce_banner.png" alt="accesories offers" style="width: 100%; height:300px">
+
                         </a>
                         <div class="carousel-caption">
 
@@ -324,6 +326,59 @@ Elevate your look with our stunning collection of jewelry. Our carefully curated
 
     </div>
     </div>
+
+        <br />
+
+            <div class="text-center" style="background-image:url('Images/bg4.jpg'); background-size:cover;">
+
+           <p style="padding-top:10px; font-family: 'Libre Caslon Text', serif;font-size:35px; font-weight:bolder; color:whitesmoke" class="text-muted">Fashion Store</p>
+            </div>
+        <div class="container-fluid  " style="margin:13px">
+
+            <div>
+                <a href="ManTshirt.aspx">
+
+                <img src="Images/tshirts.png" style="width:100%; height:300px" />
+                </a>
+
+            </div>
+            <br />
+             <div>
+                <a href="ManDenims.aspx">
+
+                <img src="Images/jeanss.png" style="width:100%; height:300px" />
+                </a>
+
+            </div>
+            <br />
+             <div>
+                <a href="WomanKurtis.aspx">
+
+                <img src="Images/kurtis.png" style="width:100%; height:300px" />
+                </a>
+
+            </div><br />
+             <div>
+
+                <a href="WomanSarees.aspx">
+
+
+                <img src="Images/saree1.png" style="width:100%; height:300px" />
+                </a>
+
+            </div><br />
+             <div>
+                <a href="WomanSarees.aspx">
+
+                <img src="Images/saree2.png" style="width:100%; height:300px" />
+                </a>
+
+            </div>
+            <br />
+
+
+
+        </div>
     <!---Middle COntents End---->
     <!---Footer COntents Start here---->
     <hr />
@@ -333,7 +388,7 @@ Elevate your look with our stunning collection of jewelry. Our carefully curated
             <div class =" alert bg-secondary p-5">
              <p class ="pull-right "><a href ="#">&nbsp; &nbsp; Back to top &nbsp; &nbsp;</a></p>
                 <p class ="pull-right "><%--<a href="SignIn.aspx"> Admin Login  </a>--%></p> 
-                <p>&copy;2022 Eshopping.in &middot; <a href ="Default.aspx">Home</a>&middot;<a href ="Contact.aspx">Contact Us</a>&middot;<a href ="About.aspx">About Us</a> </p>
+                <p>&copy;2023 Shopblink.in &middot; <a href ="Default.aspx">Home</a>&middot;<a href ="usr_contact.aspx">Contact Us</a>&middot;<a href ="About.aspx">About Us</a> </p>
             </div>
 
         </footer>

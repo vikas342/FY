@@ -14,8 +14,8 @@
                     <div class ="col-md-3 ">
 
                         <asp:TextBox ID="txtBrand" CssClass="form-control" runat="server"></asp:TextBox>
-                        <asp:RequiredFieldValidator ID="RequiredFieldValidatorBrandName" runat="server" CssClass ="text-danger " ErrorMessage="*plz Enter Brandname" ControlToValidate="txtBrand" ForeColor="Red"></asp:RequiredFieldValidator>
-                    </div>
+                  
+                        </div>
                 </div>
 
                 
@@ -24,7 +24,7 @@
                     <div class ="col-md-2 "> </div>
                     <div class ="col-md-4 ">
 
-                        <asp:Button ID="btnAddBrand" CssClass ="btn btn-success " runat="server" Text="Add" OnClick="btnAddBrand_Click"  />
+                        <asp:Button ID="btnAddBrand" CssClass ="btn btn-primary " runat="server" Text="Add" OnClick="btnAddBrand_Click"  />
                         
                     </div>
 
@@ -44,7 +44,7 @@
         <h1>Brands</h1>
         <hr />
 
- <div class="panel panel-default">
+ <div class="panel panel-primary">
 
                <div class="panel-heading"> All Brands</div>
 
@@ -57,6 +57,7 @@
                     <tr>
                         <th>#</th>
                         <th>Brand</th>
+
                         <th>Edit</th>
 
                     </tr>
@@ -74,7 +75,7 @@
                     <th> <%# Eval("BrandID") %> </th>
                     <td><%# Eval("Name") %>   </td>
 
-                    <td>Edit</td>
+                    <td><a href="EditBrand.aspx">Edit</a></td>
                 </tr>
          </ItemTemplate>
 

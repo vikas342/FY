@@ -21,6 +21,20 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap" rel="stylesheet">
 
+    <style>
+        body{
+
+
+            
+           color:white;
+           
+         background-image:url('Images/bg4.jpg');
+         background-repeat:no-repeat;
+         background-size:cover;
+
+        }
+    </style>
+
 </head>
 <body>
     <form id="form1" runat="server">
@@ -67,7 +81,7 @@ background: linear-gradient(to top right, #121FCF 40%, #CF1512 60%);
                             </ul>
 
                         </li>
-                        <li ><a href ="Contact.aspx">Contact US</a> </li>
+                        <li ><a href ="usr_contact.aspx">Contact Us</a> </li>
                          <li ><a href ="About.aspx">About Us</a> </li>
                    
 
@@ -94,15 +108,19 @@ background: linear-gradient(to top right, #121FCF 40%, #CF1512 60%);
                
             <div class="form-horizontal">
 
-              <h2>Signup Form</h2>
+              <h2>Signup</h2>
                 <hr />
            
+
+                
 
             <div class="form-group">
 
             <label class="col-md-2 control-label ">UserName:</label>
             <div class="col-md-3">
-            <asp:TextBox ID="txtUname" runat="server" Class="form-control" placeholder="Enter Your UserName"></asp:TextBox>
+            <asp:TextBox ID="txtUname" runat="server" Class="form-control" placeholder="Enter Your UserName" MaxLength="8"></asp:TextBox>
+                     <asp:RequiredFieldValidator ID="RequiredFieldValidatorUserName" runat="server" CssClass ="text-danger " ErrorMessage="Enter Your Username" ControlToValidate="txtUname" ForeColor="Red"></asp:RequiredFieldValidator>
+                   
             </div>
             </div>
 
@@ -112,15 +130,19 @@ background: linear-gradient(to top right, #121FCF 40%, #CF1512 60%);
 
             <label class="col-md-2 control-label ">Password:</label>
             <div class="col-md-3">
-            <asp:TextBox ID="txtPass" runat="server" TextMode="Password" Class="form-control" placeholder="Enter Your password"></asp:TextBox>
-            </div>
+            <asp:TextBox ID="txtPass" runat="server" TextMode="Password" Class="form-control" placeholder="Enter Your password" MaxLength="10"></asp:TextBox>
+                     <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" CssClass ="text-danger " ErrorMessage="Enter valid Password" ControlToValidate="txtPass" ForeColor="Red"></asp:RequiredFieldValidator>
+           
+                </div>
             </div>
           
             
             <div class="form-group">
             <label class="col-md-2 control-label ">Confirm Password:</label>
             <div class="col-md-3">
-            <asp:TextBox ID="txtCPass" runat="server" TextMode="Password" Class="form-control" placeholder="Enter Your Confirm password"></asp:TextBox>
+            <asp:TextBox ID="txtCPass" runat="server" TextMode="Password" Class="form-control" placeholder="Enter Your Confirm password" MaxLength="10"></asp:TextBox>
+                
+                     <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" CssClass ="text-danger " ErrorMessage="Confirm Your Password" ControlToValidate="txtCPass" ForeColor="Red"></asp:RequiredFieldValidator>
             </div>
 
           
@@ -131,6 +153,8 @@ background: linear-gradient(to top right, #121FCF 40%, #CF1512 60%);
             <label class="col-md-2 control-label ">Your Full Name:</label>
             <div class="col-md-3">
             <asp:TextBox ID="txtName" runat="server" Class="form-control" placeholder="Enter Your Name"></asp:TextBox>
+                
+                     <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" CssClass ="text-danger " ErrorMessage="Enter Your Fullname" ControlToValidate="txtName" ForeColor="Red"></asp:RequiredFieldValidator>
             </div>
 
           
@@ -141,7 +165,9 @@ background: linear-gradient(to top right, #121FCF 40%, #CF1512 60%);
 
             <label class="col-md-2 control-label ">Email:</label>
             <div class="col-md-3">
-            <asp:TextBox ID="txtEmail" runat="server" Class="form-control" placeholder="Enter Your Email"></asp:TextBox>
+            <asp:TextBox ID="txtEmail" runat="server" Class="form-control" placeholder="Enter Your Email" TextMode="Email"></asp:TextBox>
+          <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" CssClass ="text-danger " ErrorMessage="Enter Your Email" ControlToValidate="txtEmail" ForeColor="Red"></asp:RequiredFieldValidator>
+           
             </div>
 
           
@@ -151,7 +177,7 @@ background: linear-gradient(to top right, #121FCF 40%, #CF1512 60%);
 
             <label class="col-md-2 control-label "></label>
              <div class="col-md-3">
-                 <asp:Button ID="txtsignup" Class="btn btn-success" runat="server" Text="SignUP" OnClick="txtsignup_Click" />
+                 <asp:Button ID="txtsignup" Class="btn btn-primary" runat="server" Text="Signup" OnClientClick="target='_blank;'" OnClick="txtsignup_Click" />
             &nbsp;
                     </div>
           
@@ -175,10 +201,10 @@ background: linear-gradient(to top right, #121FCF 40%, #CF1512 60%);
 
         <footer class="footer-pos">
             <div class ="container ">
-        <hr />
+       
                <p class ="pull-right "><a href ="#">&nbsp; &nbsp; Back to top &nbsp; &nbsp;</a></p>
                 <p class ="pull-right "><%--<a href="SignIn.aspx"> Admin Login  </a>--%></p> 
-                <p>&copy;2022 Eshopping.in &middot; <a href ="Default.aspx">Home</a>&middot;<a href ="Contact.aspx">Contact Us</a>&middot;<a href ="About.aspx">About Us</a> </p>
+                <p>&copy;2022 Eshopping.in &middot; <a href ="Default.aspx">Home</a>&middot;<a href ="usr_contact.aspx">Contact Us</a>&middot;<a href ="About.aspx">About Us</a> </p>
            </div>
 
         </footer>

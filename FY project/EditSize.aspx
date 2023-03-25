@@ -49,7 +49,7 @@
 
                 <div class="row">
                 <div class="col-md-12">
-                <h4 class="alert-info text-center"> All Size</h4>
+                <h4 class="alert-info text-center" style="padding:20px"> All Size</h4>
                 <br />
                  <asp:TextBox ID="txtFilterGrid1Record" style="border:2px solid blue" CssClass="form-control" runat="server" placeholder="Search Category...." onkeyup="Search_Gridview(this)"></asp:TextBox>
                 <hr />
@@ -93,6 +93,13 @@
         }
     }  
         </script>
+
+
+    
+    <br />
+    <br />
+    <br />
+    <br />
 
 
 </asp:Content>

@@ -76,6 +76,7 @@
     <Content Include="AddSize.aspx" />
     <Content Include="AdminAbout.aspx" />
     <Content Include="AdminHome.aspx" />
+    <Content Include="admin_contact.aspx" />
     <Content Include="Cart.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="css\bootstrap-grid.css" />
@@ -193,6 +194,7 @@
     <Content Include="Success.aspx" />
     <Content Include="UserHome.aspx" />
     <Content Include="UserOrders.aspx" />
+    <Content Include="usr_contact.aspx" />
     <Content Include="Web.config" />
     <Content Include="WomanFootwear.aspx" />
     <Content Include="WomanSarees.aspx" />
@@ -242,6 +244,13 @@
     <Compile Include="AdminMasterPage.master.cs">
       <DependentUpon>AdminMasterPage.master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin_contact.aspx.cs">
+      <DependentUpon>admin_contact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin_contact.aspx.designer.cs">
+      <DependentUpon>admin_contact.aspx</DependentUpon>
     </Compile>
     <Compile Include="Cart.aspx.cs">
       <DependentUpon>Cart.aspx</DependentUpon>
@@ -358,6 +367,13 @@
     </Compile>
     <Compile Include="UserOrders.aspx.designer.cs">
       <DependentUpon>UserOrders.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="usr_contact.aspx.cs">
+      <DependentUpon>usr_contact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="usr_contact.aspx.designer.cs">
+      <DependentUpon>usr_contact.aspx</DependentUpon>
     </Compile>
     <Compile Include="WomanFootwear.aspx.cs">
       <DependentUpon>WomanFootwear.aspx</DependentUpon>

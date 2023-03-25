@@ -14,15 +14,26 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
+    <style>
+        body{
+
+
+            
+           color:white;
+           
+         background-image:url('Images/bg4.jpg');
+         background-repeat:no-repeat;
+         background-size:cover;
+
+        }
+    </style>
 </head>
 <body>
     <form id="form1" runat="server">
    
           <br />
         <br />
-        <br />
-
-        <!---signup page--->
+     
         <div class ="container">
                
             <div class="form-horizontal">
@@ -69,7 +80,7 @@
 
             <label class="col-md-2 control-label "></label>
               <div class="col-md-3">
-                 <asp:Button ID="txtsignup" Class="btn btn-success" runat="server" Text="Send" OnClick="txtsend_Click" />
+                 <asp:Button ID="txtsignup" Class="btn btn-primary" runat="server" Text="Send" OnClick="txtsend_Click" />
             &nbsp;
                     </div>
           

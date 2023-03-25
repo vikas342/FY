@@ -13,8 +13,8 @@
                     <div class ="col-md-3 ">
 
                         <asp:TextBox ID="txtCategory" CssClass="form-control" runat="server"></asp:TextBox>
-                        <asp:RequiredFieldValidator ID="RequiredFieldValidatortxtCategoryName" runat="server" CssClass ="text-danger " ErrorMessage="*plz Enter Brandname" ControlToValidate="txtCategory" ForeColor="Red"></asp:RequiredFieldValidator>
-                    </div>
+                  
+                        </div>
                 </div>
                 
 
@@ -23,7 +23,7 @@
                     <div class ="col-md-2 "> </div>
                     <div class ="col-md-6 ">
 
-                        <asp:Button ID="btnAddtxtCategory" CssClass ="btn btn-success " runat="server" Text="Add Category" OnClick="btnAddtxtCategory_Click"   />
+                        <asp:Button ID="btnAddtxtCategory" CssClass ="btn btn-primary " runat="server" Text="Add Category" OnClick="btnAddtxtCategory_Click"   />
                         
                     </div>
                 </div>
@@ -34,7 +34,7 @@
              <h1>Categories</h1>
         <hr />
 
- <div class="panel panel-default">
+ <div class="panel panel-primary">
 
                <div class="panel-heading"> All Categories</div>
 
@@ -63,8 +63,8 @@
              <tr>
                     <th> <%# Eval("CatID") %> </th>
                     <td><%# Eval("CatName") %>   </td>
+                                     <td><a href="EditCategory.aspx">Edit</a></td>
 
-                    <td>Edit</td>
                 </tr>
          </ItemTemplate>
 

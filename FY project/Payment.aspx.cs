@@ -283,6 +283,104 @@ public partial class Payment : System.Web.UI.Page
         }
     }
 
+
+
+    protected void Btnpaytm_Click(object sender, EventArgs e)
+    {
+        if (Session["Username"] != null)
+        {
+            Session["Address"] = txtAddress.Text;
+            Session["Mobile"] = txtMobileNumber.Text;
+            Session["OrderNumber"] = OrderNumber.ToString();
+            Session["PayMethod"] = "Paytm";
+
+            string USERID = Session["USERID"].ToString();
+            string PaymentType = "Paytm";
+            string PaymentStatus = "Paid";
+            string EMAILID = Session["USEREMAIL"].ToString();
+            string OrderStatus = "Delivered";
+            string FullName = Session["getFullName"].ToString();
+            using (SqlConnection con = new SqlConnection(CS))
+            {
+                SqlCommand cmd = new SqlCommand("SP_InsertOrder", con);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@UserID", USERID);
+                cmd.Parameters.AddWithValue("@Email", EMAILID);
+                cmd.Parameters.AddWithValue("@CartAmount", hdCartAmount.Value);
+                cmd.Parameters.AddWithValue("@CartDiscount", hdCartDiscount.Value);
+                cmd.Parameters.AddWithValue("@TotalPaid", hdTotalPayed.Value);
+                cmd.Parameters.AddWithValue("@PaymentType", PaymentType);
+                cmd.Parameters.AddWithValue("@PaymentStatus", PaymentStatus);
+                cmd.Parameters.AddWithValue("@DateOfPurchase", DateTime.Now);
+                cmd.Parameters.AddWithValue("@Name", FullName);
+                cmd.Parameters.AddWithValue("@Address", txtAddress.Text);
+                cmd.Parameters.AddWithValue("@MobileNumber", txtMobileNumber.Text);
+                cmd.Parameters.AddWithValue("@OrderStatus", OrderStatus);
+                cmd.Parameters.AddWithValue("@OrderNumber", OrderNumber.ToString());
+                if (con.State == ConnectionState.Closed) { con.Open(); }
+                Int64 OrderID = Convert.ToInt64(cmd.ExecuteScalar());
+                InsertOrderProducts();
+            }
+        }
+        else
+        {
+            Response.Redirect("SignIn.aspx?RtPP=yes");
+        }
+    }
+
+
+    protected void BtnAmazonPay_Click(object sender, EventArgs e)
+    {
+        if (Session["Username"] != null)
+        {
+            Session["Address"] = txtAddress.Text;
+            Session["Mobile"] = txtMobileNumber.Text;
+            Session["OrderNumber"] = OrderNumber.ToString();
+            Session["PayMethod"] = "AmazonPay";
+
+            string USERID = Session["USERID"].ToString();
+            string PaymentType = "Amazon Pay";
+            string PaymentStatus = "Paid";
+            string EMAILID = Session["USEREMAIL"].ToString();
+            string OrderStatus = "Delivered";
+            string FullName = Session["getFullName"].ToString();
+            using (SqlConnection con = new SqlConnection(CS))
+            {
+                SqlCommand cmd = new SqlCommand("SP_InsertOrder", con);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@UserID", USERID);
+                cmd.Parameters.AddWithValue("@Email", EMAILID);
+                cmd.Parameters.AddWithValue("@CartAmount", hdCartAmount.Value);
+                cmd.Parameters.AddWithValue("@CartDiscount", hdCartDiscount.Value);
+                cmd.Parameters.AddWithValue("@TotalPaid", hdTotalPayed.Value);
+                cmd.Parameters.AddWithValue("@PaymentType", PaymentType);
+                cmd.Parameters.AddWithValue("@PaymentStatus", PaymentStatus);
+                cmd.Parameters.AddWithValue("@DateOfPurchase", DateTime.Now);
+                cmd.Parameters.AddWithValue("@Name", FullName);
+                cmd.Parameters.AddWithValue("@Address", txtAddress.Text);
+                cmd.Parameters.AddWithValue("@MobileNumber", txtMobileNumber.Text);
+                cmd.Parameters.AddWithValue("@OrderStatus", OrderStatus);
+                cmd.Parameters.AddWithValue("@OrderNumber", OrderNumber.ToString());
+                if (con.State == ConnectionState.Closed) { con.Open(); }
+                Int64 OrderID = Convert.ToInt64(cmd.ExecuteScalar());
+                InsertOrderProducts();
+            }
+        }
+        else
+        {
+            Response.Redirect("SignIn.aspx?RtPP=yes");
+        }
+    }
+
+
+
+
+
+
+
+
+
+
     private void InsertOrderProducts()
     {
         string USERID = Session["USERID"].ToString();

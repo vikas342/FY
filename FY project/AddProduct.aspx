@@ -13,7 +13,9 @@
            <div class ="form-group">
                <asp:Label ID="Label1" runat="server" CssClass ="col-md-2 control-label" Text="Proudct Name"></asp:Label>
                <div class ="col-md-3">
-                   <asp:TextBox ID="txtProductName" CssClass ="form-control" runat="server"></asp:TextBox>
+                   <asp:TextBox ID="txtProductName" CssClass ="form-control" runat="server" ></asp:TextBox>
+                             <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" CssClass ="text-danger " ErrorMessage="Enter Proudct Name" ControlToValidate="txtProductName" ForeColor="Red"></asp:RequiredFieldValidator>
+           
 
 
                </div>
@@ -22,23 +24,30 @@
            <div class ="form-group">
                <asp:Label ID="Label2" runat="server" CssClass ="col-md-2 control-label" Text="Price"></asp:Label>
                <div class ="col-md-3">
-                   <asp:TextBox ID="txtPrice" CssClass ="form-control" runat="server"></asp:TextBox>
-               </div>
+                   <asp:TextBox ID="txtPrice" CssClass ="form-control" runat="server" TextMode="Number"  min="0"></asp:TextBox>
+                   <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" CssClass ="text-danger " ErrorMessage="Enter Price" ControlToValidate="txtPrice" ForeColor="Red"></asp:RequiredFieldValidator>
+             
+                   </div>
            </div>
 
 
            <div class ="form-group">
                <asp:Label ID="Label3" runat="server" CssClass ="col-md-2 control-label" Text="SellingPrice"></asp:Label>
                <div class ="col-md-3">
-                   <asp:TextBox ID="txtsellPrice" CssClass ="form-control" runat="server"></asp:TextBox>
+                   <asp:TextBox ID="txtsellPrice" CssClass ="form-control" runat="server" TextMode="Number"  min="0"></asp:TextBox>
+                   <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" CssClass ="text-danger " ErrorMessage="Enter Selling Price" ControlToValidate="txtsellPrice" ForeColor="Red"></asp:RequiredFieldValidator>
+
                </div>
            </div>
 
 
            <div class ="form-group">
                <asp:Label ID="Label4" runat="server" CssClass ="col-md-2 control-label" Text="Brand"></asp:Label>
+
                <div class ="col-md-3">
                    <asp:DropDownList ID="ddlBrand" CssClass ="form-control" runat="server"></asp:DropDownList>
+                   <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" CssClass ="text-danger " ErrorMessage="Enter Brand" ControlToValidate="ddlBrand" ForeColor="Red"></asp:RequiredFieldValidator>
+
                </div>
            </div>
 
@@ -48,6 +57,8 @@
                <asp:Label ID="Label5" runat="server" CssClass ="col-md-2 control-label" Text="Category"></asp:Label>
                <div class ="col-md-3">
                    <asp:DropDownList ID="ddlCategory" CssClass ="form-control" AutoPostBack ="true"  runat="server" OnSelectedIndexChanged="ddlCategory_SelectedIndexChanged"></asp:DropDownList>
+                   <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" CssClass ="text-danger " ErrorMessage="Enter Category" ControlToValidate="ddlCategory" ForeColor="Red"></asp:RequiredFieldValidator>
+               
                </div>
            </div>
 
@@ -55,14 +66,19 @@
            <div class ="form-group">
                <asp:Label ID="Label6" runat="server" CssClass ="col-md-2 control-label" Text="SubCategory"></asp:Label>
                <div class ="col-md-3">
-                   <asp:DropDownList ID="ddlSubCategory" CssClass ="form-control" runat="server" AutoPostBack="True" OnSelectedIndexChanged="ddlSubCategory_SelectedIndexChanged"></asp:DropDownList>
-               </div>
+                   <asp:DropDownList ID="ddlSubCategory" CssClass ="form-control" runat="server" AutoPostBack="True" OnSelectedIndexChanged="ddlSubCategory_SelectedIndexChanged" ></asp:DropDownList>
+                   <asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" CssClass ="text-danger " ErrorMessage="" ControlToValidate="ddlSubCategory" ForeColor="Red"></asp:RequiredFieldValidator>
+             
+                   </div>
            </div>
 
            <div class ="form-group">
                <asp:Label ID="Label19" runat="server" CssClass ="col-md-2 control-label" Text="Gender"></asp:Label>
                <div class ="col-md-3">
+                 
                    <asp:DropDownList ID="ddlGender" CssClass ="form-control" runat="server" AutoPostBack="True" OnSelectedIndexChanged="ddlGender_SelectedIndexChanged"></asp:DropDownList>
+                   <asp:RequiredFieldValidator ID="RequiredFieldValidator7" runat="server" CssClass ="text-danger " ErrorMessage="Enter valid Password" ControlToValidate="ddlGender" ForeColor="Red"></asp:RequiredFieldValidator>
+               
                </div>
            </div>
 
@@ -70,6 +86,9 @@
                <asp:Label ID="Label7" runat="server" CssClass ="col-md-2 control-label" Text="Size"></asp:Label>
                <div class ="col-md-3">
                    <asp:CheckBoxList ID="cblSize" CssClass ="form-control" RepeatDirection="Horizontal"  runat="server"></asp:CheckBoxList>
+                   
+
+                   
                </div>
            </div>
 
@@ -77,6 +96,8 @@
                <asp:Label ID="Label20" runat="server" CssClass ="col-md-2 control-label" Text="Quantity"></asp:Label>
                <div class ="col-md-3">
                    <asp:TextBox ID="txtQuantity" CssClass ="form-control" runat="server"></asp:TextBox>
+                   <asp:RequiredFieldValidator ID="RequiredFieldValidator9" runat="server" CssClass ="text-danger " ErrorMessage="Enter Quantity" ControlToValidate="txtQuantity" ForeColor="Red"></asp:RequiredFieldValidator>
+
                </div>
            </div>
 
@@ -84,6 +105,8 @@
                <asp:Label ID="Label8" runat="server" CssClass ="col-md-2 control-label" Text="Description"></asp:Label>
                <div class ="col-md-3">
                    <asp:TextBox ID="txtDescription" TextMode ="MultiLine"  CssClass ="form-control" runat="server"></asp:TextBox>
+                   <asp:RequiredFieldValidator ID="RequiredFieldValidator10" runat="server" CssClass ="text-danger " ErrorMessage="Enter Description" ControlToValidate="txtDescription" ForeColor="Red"></asp:RequiredFieldValidator>
+
                </div>
            </div>
 
@@ -92,6 +115,8 @@
                <asp:Label ID="Label9" runat="server" CssClass ="col-md-2 control-label" Text="Product Details"></asp:Label>
                <div class ="col-md-3">
                    <asp:TextBox ID="txtPDetail" TextMode ="MultiLine" CssClass ="form-control" runat="server"></asp:TextBox>
+                   <asp:RequiredFieldValidator ID="RequiredFieldValidator11" runat="server" CssClass ="text-danger " ErrorMessage="Enter Product Details" ControlToValidate="txtPDetail" ForeColor="Red"></asp:RequiredFieldValidator>
+
                </div>
            </div>
 
@@ -100,6 +125,8 @@
                <asp:Label ID="Label10" runat="server" CssClass ="col-md-2 control-label" Text="Materials and Care"></asp:Label>
                <div class ="col-md-3">
                    <asp:TextBox ID="txtMatCare" TextMode ="MultiLine" CssClass ="form-control" runat="server"></asp:TextBox>
+                   <asp:RequiredFieldValidator ID="RequiredFieldValidator12" runat="server" CssClass ="text-danger " ErrorMessage="Enter Materials and Care" ControlToValidate="txtMatCare" ForeColor="Red"></asp:RequiredFieldValidator>
+
                </div>
            </div>
 
@@ -107,6 +134,8 @@
                <asp:Label ID="Label11" runat="server" CssClass ="col-md-2 control-label" Text="Upload Image"></asp:Label>
                <div class ="col-md-3">
                    <asp:FileUpload ID="fuImg01" CssClass ="form-control" runat="server" />
+                   <asp:RequiredFieldValidator ID="RequiredFieldValidator13" runat="server" CssClass ="text-danger " ErrorMessage="Upload Image" ControlToValidate="fuImg01" ForeColor="Red"></asp:RequiredFieldValidator>
+
                </div>
            </div>
 
@@ -114,6 +143,8 @@
                <asp:Label ID="Label12" runat="server" CssClass ="col-md-2 control-label" Text="Upload Image"></asp:Label>
                <div class ="col-md-3">
                    <asp:FileUpload ID="fuImg02" CssClass ="form-control" runat="server" />
+                   <asp:RequiredFieldValidator ID="RequiredFieldValidator14" runat="server" CssClass ="text-danger " ErrorMessage="Upload Image" ControlToValidate="fuImg02" ForeColor="Red"></asp:RequiredFieldValidator>
+
                </div>
            </div>
 
@@ -121,6 +152,8 @@
                <asp:Label ID="Label13" runat="server" CssClass ="col-md-2 control-label" Text="Upload Image"></asp:Label>
                <div class ="col-md-3">
                    <asp:FileUpload ID="fuImg03" CssClass ="form-control" runat="server" />
+                   <asp:RequiredFieldValidator ID="RequiredFieldValidator15" runat="server" CssClass ="text-danger " ErrorMessage="Upload Image" ControlToValidate="fuImg03" ForeColor="Red"></asp:RequiredFieldValidator>
+
                </div>
            </div>
 
@@ -128,6 +161,8 @@
                <asp:Label ID="Label14" runat="server" CssClass ="col-md-2 control-label" Text="Upload Image"></asp:Label>
                <div class ="col-md-3">
                    <asp:FileUpload ID="fuImg04" CssClass ="form-control" runat="server" />
+                   <asp:RequiredFieldValidator ID="RequiredFieldValidator16" runat="server" CssClass ="text-danger " ErrorMessage="Upload Image" ControlToValidate="fuImg04" ForeColor="Red"></asp:RequiredFieldValidator>
+
                </div>
            </div>
 
@@ -137,6 +172,8 @@
                <asp:Label ID="Label15" runat="server" CssClass ="col-md-2 control-label" Text="Upload Image"></asp:Label>
                <div class ="col-md-3">
                    <asp:FileUpload ID="fuImg05" CssClass ="form-control" runat="server" />
+                   <asp:RequiredFieldValidator ID="RequiredFieldValidator17" runat="server" CssClass ="text-danger " ErrorMessage="Upload Image" ControlToValidate="fuImg05" ForeColor="Red"></asp:RequiredFieldValidator>
+
                </div>
            </div>
 
@@ -168,7 +205,7 @@
                     <div class ="col-md-2 "> </div>
                     <div class ="col-md-6 ">
 
-                        <asp:Button ID="btnAdd" CssClass ="btn btn-success " runat="server" Text="ADD Product" OnClick="btnAdd_Click"  />
+                        <asp:Button ID="btnAdd" CssClass ="btn btn-primary " runat="server" Text="ADD Product" OnClick="btnAdd_Click"  />
                         
                     </div>
                 </div>

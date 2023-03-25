@@ -61,18 +61,18 @@
 background: linear-gradient(to top right, #121FCF 40%, #CF1512 60%);
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent; font-size:25px ;font-weight:bolder; font-family: 'Sriracha', cursive;"><span>
-                       <img src="Images/Eshopping.png" style="width:70px" alt="Shopppy" height ="30" /></span>Shopppy</a>
+                       <img src="Images/Eshopping.png" style="width:70px" alt="Shopppy" height ="30" /></span>SHOPBLINK</a>
    
                 </div>
                 
                 
                 <div class="navbar-collapse collapse text-center" style="font-family: 'Roboto', sans-serif; font-size:15px; font-weight:bolder">
-                    <ul class ="nav navbar-nav navbar-right">
+                    <ul class ="nav navbar-nav navbar-right" >
                         <li> <a href ="UserHome.aspx">Home</a> </li>
                         <li><a href ="UserOrders.aspx">Orders</a> </li>
-                        <li class ="drodown">
+                        <li class ="drodown" >
                             <a href ="#" class ="dropdown-toggle" data-toggle="dropdown">Products<b class ="caret"></b></a>
-                            <ul class ="dropdown-menu ">
+                            <ul class ="dropdown-menu " >
                                 <li> <a href ="Products.aspx">All Products</a></li>
                                 <li role="separator" class ="divider "></li> 
                                 <li class ="dropdown-header ">Men</li>
@@ -90,7 +90,8 @@ background: linear-gradient(to top right, #121FCF 40%, #CF1512 60%);
                             </ul>
 
                         </li>
-                        <li><a href ="Contact.aspx">Contact Us</a> </li>
+                        <li ><a href ="usr_contact.aspx" >Contact Us</a> </li>
+
 
                          <li ><a href ="About.aspx">About Us</a> </li>
 
@@ -177,7 +178,7 @@ background: linear-gradient(to top right, #121FCF 40%, #CF1512 60%);
                     <div class="item">
                         <a href="Accesories.aspx">
 
-                        <img src="ImgSlider/Accesories_banner.jpg" alt="accesories offers" style="width: 100%; height:300px">
+                        <img src="ImgSlider/acce_banner.png" alt="accesories offers" style="width: 100%; height:300px">
                         </a>
                         <div class="carousel-caption">
 
@@ -262,7 +263,7 @@ background: linear-gradient(to top right, #121FCF 40%, #CF1512 60%);
 
                     Step into style and step up your game with our impressive collection of men's footwear. Whether you're looking for sleek dress shoes, comfortable sneakers, or rugged boots, we have you covered.</p>
                 
-                    <a class="btn btn-default " href="#" role="button">View More &raquo;</a>
+                    <a class="btn btn-default " href="ManFootwear.aspx" role="button">View More &raquo;</a>
             </div>            
             
             <div class="col-lg-4 home_category"  style="padding:15px" id="cat_div">
@@ -349,6 +350,59 @@ Elevate your look with our stunning collection of jewelry. Our carefully curated
 
     </div>
     </div>
+
+         <br />
+
+            <div class="text-center" style="background-image:url('Images/bg4.jpg'); background-size:cover;">
+
+           <p style="padding-top:10px; font-family: 'Libre Caslon Text', serif;font-size:35px; font-weight:bolder; color:whitesmoke" class="text-muted">Fashion Store</p>
+            </div>
+        <div class="container-fluid  " style="margin:13px">
+
+            <div>
+                <a href="ManTshirt.aspx">
+
+                <img src="Images/tshirts.png" style="width:100%; height:300px" />
+                </a>
+
+            </div>
+            <br />
+             <div>
+                <a href="ManDenims.aspx">
+
+                <img src="Images/jeanss.png" style="width:100%; height:300px" />
+                </a>
+
+            </div>
+            <br />
+             <div>
+                <a href="WomanKurtis.aspx">
+
+                <img src="Images/kurtis.png" style="width:100%; height:300px" />
+                </a>
+
+            </div><br />
+             <div>
+
+                <a href="WomanSarees.aspx">
+
+
+                <img src="Images/saree1.png" style="width:100%; height:300px" />
+                </a>
+
+            </div><br />
+             <div>
+                <a href="WomanSarees.aspx">
+
+                <img src="Images/saree2.png" style="width:100%; height:300px" />
+                </a>
+
+            </div>
+            <br />
+
+
+
+        </div>
     
         
         <!---Middle COntents End---->
@@ -361,7 +415,7 @@ Elevate your look with our stunning collection of jewelry. Our carefully curated
         <footer>
             <div class ="container ">
                 <p class ="pull-right "><a href ="#">Back to top</a></p>
-                <p>&copy;2020 Eshopping.in &middot; <a href ="UserHome.aspx">Home</a>&middot;<a href ="Products.aspx">Products</a>&middot;<a href ="Contact.aspx">Contact Us</a>&middot;<a href ="About.aspx">About Us</a> </p>
+                <p>&copy;2023 Shopblink.in &middot; <a href ="UserHome.aspx">Home</a>&middot;<a href ="Products.aspx">Products</a>&middot;<a href ="Contact.aspx">Contact Us</a>&middot;<a href ="About.aspx">About Us</a> </p>
             </div>
 
         </footer>

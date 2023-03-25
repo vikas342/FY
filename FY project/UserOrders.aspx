@@ -25,17 +25,20 @@
       <div class="panel-heading">Orders</div>
       <div class="panel-body">
      
+          <div class="text-center text-muted" style="padding:0px">
+
                         <asp:Label ID="Label1" runat="server"></asp:Label>
+          </div>
 
 
 
   <asp:Repeater ID="rptrProducts"  runat="server">
                                 <ItemTemplate>
                                     <%--Show cart details start--%>
-                                    <div class="media" style="border: 1px solid black;">
+                                    <div class="media" style="border: 1px solid black; padding:10px">
                                         <div class="media-left">
                                             <a href="ProductView.aspx?PID=<%# Eval("PID") %>" target="_blank">
-                                                <img class="media-object" width="200px" src="Images/ProductImages/<%# Eval("PID") %>/<%# Eval("ImageName") %><%# Eval("Extention") %>" alt="<%# Eval("ImageName") %>" onerror="this.src='Images/NoImg.png'" />
+                                                <img class="media-object" width="200px" src="Images/ProductImages/<%# Eval("PID") %>/<%# Eval("ImageName") %><%# Eval("Extention") %>" alt="<%# Eval("ImageName") %>" onerror="this.src='Images/NoImg.png'" style="height:200px"/>
                                             </a>
                                         </div>
                                         <div class="media-body">
@@ -47,7 +50,7 @@
                                                    <br />
                                                    <br />
 
-                        <asp:Label ID="Label1" runat="server" Text="Showing All Products"></asp:Label>
+
                                                    
 
                                                     <div class="probrand"><%# Eval ("pname") %>  </div>

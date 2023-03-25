@@ -21,7 +21,9 @@
                     <button id="btnCart2" runat="server" class="btn btn-primary navbar-btn pull-right hidden" onserverclick="btnCart2_ServerClick" type="button">
                         Cart <span id="CartBadge" runat="server" class="badge">0</span>
                     </button>
-                    <div style="padding-top: 50px">
+                    <div style="padding-top: 20px">
+                            <h4 class="proNameViewCart text-center" runat="server" id="h5NoItems" style="padding-top:10px"></h4>
+
                         <div class="col-md-9">
                             <h4 class="proNameViewCart" runat="server" id="h4NoItems"></h4>
                             <div id="divQtyError" runat="server" class="alert alert-success alert-dismissible fade in h4">
@@ -31,10 +33,10 @@
                             <asp:Repeater ID="RptrCartProducts" OnItemCommand="RptrCartProducts_ItemCommand" runat="server">
                                 <ItemTemplate>
                                     <%--Show cart details start--%>
-                                    <div class="media" style="border: 1px solid black;">
+                                    <div class="media" style="border: 1px solid black; padding:30px">
                                         <div class="media-left">
                                             <a href="ProductView.aspx?PID=<%# Eval("PID") %>" target="_blank">
-                                                <img class="media-object" width="100px" src="Images/ProductImages/<%# Eval("PID") %>/<%# Eval("Name") %><%# Eval("Extention") %>" alt="<%# Eval("Name") %>" onerror="this.src='Images/NoImg.png'" />
+                                                <img class="media-object" width="100px" src="Images/ProductImages/<%# Eval("PID") %>/<%# Eval("Name") %><%# Eval("Extention") %>" alt="<%# Eval("Name") %>" onerror="this.src='Images/NoImg.png'"  />
                                             </a>
                                         </div>
                                         <div class="media-body">
@@ -59,6 +61,25 @@
                                     </div>
                                 </ItemTemplate>
                             </asp:Repeater>
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            
+
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+
                             <%--Show cart details Ending--%>
                         </div>
 

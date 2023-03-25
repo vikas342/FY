@@ -21,6 +21,17 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap" rel="stylesheet">
+   <style>
+       body{
+           color:white;
+           
+         background-image:url('Images/bg4.jpg');
+         background-repeat:no-repeat;
+         background-size:cover;
+
+           
+       }
+   </style>
 </head>
 <body>
     <form id="form1" runat="server">
@@ -67,7 +78,7 @@ background: linear-gradient(to top right, #121FCF 40%, #CF1512 60%);
                             </ul>
 
                         </li>
-                        <li ><a href ="Contact.aspx">Contact US</a> </li>
+                        <li ><a href ="usr_contact.aspx">Contact US</a> </li>
                          <li ><a href ="About.aspx">About Us</a> </li>
                    
 
@@ -85,26 +96,29 @@ background: linear-gradient(to top right, #121FCF 40%, #CF1512 60%);
 
         <!----singin form start--->
 
-        <div class ="container ">
-            <div class ="form-horizontal ">
-                <h2>Login Form</h2>
+        <div class ="container">
+
+            <div class ="form-horizontal  ">
+                <h2>Login</h2>
                 <hr />
-                <div class ="form-group">
-                    <asp:Label ID="Label1" CssClass ="col-md-2 control-label " runat="server" Text="UserName"></asp:Label>
+
+
+                <div class ="form-group ">
+                    <asp:Label ID="Label1" CssClass ="col-md-2 control-label " runat="server"  Text="UserName :"></asp:Label>
                     <div class ="col-md-3 ">
 
-                        <asp:TextBox ID="txtUsername" CssClass="form-control" runat="server"></asp:TextBox>
-                        <asp:RequiredFieldValidator ID="RequiredFieldValidatorUserName" runat="server" CssClass ="text-danger " ErrorMessage="*plz Enter Username" ControlToValidate="txtUsername" ForeColor="Red"></asp:RequiredFieldValidator>
+                        <asp:TextBox ID="txtUsername" CssClass="form-control" MaxLength="8" runat="server"></asp:TextBox>
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidatorUserName" runat="server" CssClass ="text-danger " ErrorMessage="Enter valid Username" ControlToValidate="txtUsername" ForeColor="Red"></asp:RequiredFieldValidator>
                     </div>
                 </div>
 
 
                 <div class ="form-group">
-                    <asp:Label ID="Label2" CssClass ="col-md-2 control-label " runat="server" Text="Password"></asp:Label>
+                    <asp:Label ID="Label2" CssClass ="col-md-2 control-label " runat="server" Text="Password :"></asp:Label>
                     <div class ="col-md-3 ">
 
-                        <asp:TextBox ID="txtPass" CssClass="form-control" runat="server" TextMode="Password"></asp:TextBox>
-                        <asp:RequiredFieldValidator ID="RequiredFieldValidatorPass" CssClass ="text-danger " runat="server" ErrorMessage="*the password field is required" ControlToValidate="txtPass" ForeColor="Red"></asp:RequiredFieldValidator>
+                        <asp:TextBox ID="txtPass" CssClass="form-control" runat="server" TextMode="Password" MaxLength="10" ></asp:TextBox>
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidatorPass" CssClass ="text-danger " runat="server" ErrorMessage="Enter valid password" ControlToValidate="txtPass" ForeColor="Red"></asp:RequiredFieldValidator>
                     </div>
                 </div>
 
@@ -123,8 +137,8 @@ background: linear-gradient(to top right, #121FCF 40%, #CF1512 60%);
                     <div class ="col-md-2 "> </div>
                     <div class ="col-md-6 ">
 
-                        <asp:Button ID="btnLogin" CssClass ="btn btn-success " runat="server" Text="Login&raquo;" OnClick="btnLogin_Click" />
-                        <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/SignUp.aspx">Sign Up</asp:HyperLink>
+                        <asp:Button ID="btnLogin" CssClass ="btn btn-primary " runat="server" Text="Login" OnClientClick="target='_blank;'" OnClick="btnLogin_Click" />
+                        <asp:HyperLink ID="HyperLink1" runat="server"   NavigateUrl="~/SignUp.aspx">Sign Up</asp:HyperLink>
                     </div>
                 </div>
                 
@@ -158,23 +172,13 @@ background: linear-gradient(to top right, #121FCF 40%, #CF1512 60%);
         <!----singin form End--->
 
           <!---Footer COntents Start here---->
-        <footer>
-            <br />
-            <br />
-
-        <br />
-            <br />
-            <br />
-            <br />
-            <br />
-
-        <hr />
-
-            <div class =" alert bg-secondary p-5">
-             <p class ="pull-right "><a href ="#">&nbsp; &nbsp; Back to top &nbsp; &nbsp;</a></p>
+         <footer class="footer-pos">
+            <div class ="container ">
+       
+               <p class ="pull-right "><a href ="#">&nbsp; &nbsp; Back to top &nbsp; &nbsp;</a></p>
                 <p class ="pull-right "><%--<a href="SignIn.aspx"> Admin Login  </a>--%></p> 
-                <p>&copy;2022 Eshopping.in &middot; <a href ="Default.aspx">Home</a>&middot;<a href ="Contact.aspx">Contact Us</a>&middot;<a href ="About.aspx">About Us</a> </p>
-            </div>
+                <p>&copy;2022 Eshopping.in &middot; <a href ="Default.aspx">Home</a>&middot;<a href ="usr_contact.aspx">Contact Us</a>&middot;<a href ="About.aspx">About Us</a> </p>
+           </div>
 
         </footer>
 

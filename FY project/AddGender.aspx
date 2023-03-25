@@ -14,8 +14,8 @@
                     <div class ="col-md-3 ">
 
                         <asp:TextBox ID="txtGender" CssClass="form-control" runat="server"></asp:TextBox>
-                        <asp:RequiredFieldValidator ID="RequiredFieldValidatorGender" runat="server" CssClass ="text-danger " ErrorMessage="*plz Enter Gender" ControlToValidate="txtGender" ForeColor="Red"></asp:RequiredFieldValidator>
-                    </div>
+                  
+                        </div>
                 </div>
 
 
@@ -29,7 +29,7 @@
                     <div class ="col-md-2 "> </div>
                     <div class ="col-md-6 ">
 
-                        <asp:Button ID="btnAddBrand" CssClass ="btn btn-success " runat="server" Text="Add" OnClick="btnAddBrand_Click"  />
+                        <asp:Button ID="btnAddBrand" CssClass ="btn btn-primary " runat="server" Text="Add" OnClick="btnAddBrand_Click"  />
                         
                     </div>
                 </div>
@@ -46,7 +46,7 @@
          <h1>Gender</h1>
         <hr />
 
- <div class="panel panel-default">
+ <div class="panel panel-primary">
 
                <div class="panel-heading"> All Gender</div>
 
@@ -59,7 +59,7 @@
                     <tr>
                         <th>#</th>
                         <th>Gender</th>
-                        <th>Edit</th>
+                     
 
                     </tr>
 
@@ -72,11 +72,11 @@
 
 
          <ItemTemplate>
+             <tbody>
              <tr>
                     <th> <%# Eval("GenderID") %> </th>
                     <td><%# Eval("GenderName") %>   </td>
 
-                    <td>Edit</td>
                 </tr>
          </ItemTemplate>
 
