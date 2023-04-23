@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/AdminMasterPage.master" AutoEventWireup="true" CodeFile="Report.aspx.cs" Inherits="Report" %>
+﻿<%@ Page Title="Report" Language="C#" MasterPageFile="~/AdminMasterPage.master" AutoEventWireup="true" CodeFile="Report.aspx.cs" Inherits="Report" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 
@@ -38,8 +38,9 @@
       
       
       </div>
-      <div class="panel-footer">
-       <div class="panel-heading"><h5> Quantity Start Report</h5>  </div>
+    <div class="panel panel-primary">
+
+       <div class="panel-heading"><h5> Stock Opening Report</h5>  </div>
       <div class="panel-body">
           <div class="row">
              <div class="col-md-12">

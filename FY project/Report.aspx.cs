@@ -33,8 +33,8 @@ public partial class Report : System.Web.UI.Page
     {
 
         SqlConnection con = new SqlConnection(CS);
-        //string qr = "select t1.OrderID,t3.Name,t2.PName,t1.Quantity as QtySell,t4.Quantity as StockOpening,t4.Quantity-t1.Quantity as Available  from tblOrderProducts as t1 inner join tblProducts as t2 on t2.PID=t1.PID inner join tblUsers as t3 on t3.Uid=t1.UserID inner join tblProductSizeQuantity as t4 on t4.PID=t1.PID";
-        string qr = "set nocount on; select t1.OrderID,UPPER(t3.Name)as Name,t1.PID,t1.Products,t4.Quantity as StockOpening,t1.Quantity as QtySell,(t4.Quantity-t1.Quantity)as StockAvailable,t2.CartAmount,t2.CartDiscount,t2.TotalPaid,Convert(nvarchar(10),t2.DateOfPurchase,105)as Date,t2.PaymentType,t2.Address from tblOrderProducts as t1 with(nolock) inner join tblOrders as t2 with(nolock) on t1.OrderID=t2.OrderNumber inner join tblUsers as t3 with(nolock) on t1.UserID=t3.Uid inner join tblProductSizeQuantity as t4 with(nolock) on t1.PID=t4.PID";
+       // string qr = "select t1.OrderID,t3.Name,t2.PName,t1.Quantity as QtySell,t4.Quantity as StockOpening,t4.Quantity-t1.Quantity as Available  from tblOrderProducts as t1 inner join tblProducts as t2 on t2.PID=t1.PID inner join tblUsers as t3 on t3.Uid=t1.UserID inner join tblProductSizeQuantity as t4 on t4.PID=t1.PID";
+       string qr = "set nocount on; select t1.OrderID,UPPER(t3.Name)as Name,t1.PID,t1.Products,t4.Quantity as StockOpening,t1.Quantity as QtySell,(t4.Quantity-t1.Quantity)as StockAvailable,t2.CartAmount,t2.CartDiscount,t2.TotalPaid,Convert(nvarchar(10),t2.DateOfPurchase,105)as Date,t2.PaymentType,t2.Address from tblOrderProducts as t1 with(nolock) inner join tblOrders as t2 with(nolock) on t1.OrderID=t2.OrderNumber inner join tblUsers as t3 with(nolock) on t1.UserID=t3.Uid inner join tblProductSizeQuantity as t4 with(nolock) on t1.PID=t4.PID";
         SqlCommand cmd = new SqlCommand(qr, con);
         SqlDataAdapter da = new SqlDataAdapter(cmd);
         DataTable dt = new DataTable();

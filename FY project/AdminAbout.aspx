@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/AdminMasterPage.master" AutoEventWireup="true" CodeFile="AdminAbout.aspx.cs" Inherits="AdminAbout" %>
+﻿<%@ Page Title="About us" Language="C#" MasterPageFile="~/AdminMasterPage.master" AutoEventWireup="true" CodeFile="AdminAbout.aspx.cs" Inherits="AdminAbout" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 
 
@@ -49,7 +49,7 @@
 
 
 <div class="jumbotron text-center">
-  <h1>Shopppy</h1> 
+  <h1>ShopBlink</h1> 
 </div>
 
 <!-- Container (About Section) -->

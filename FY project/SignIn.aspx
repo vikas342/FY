@@ -50,7 +50,7 @@
 background: linear-gradient(to top right, #121FCF 40%, #CF1512 60%);
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent; font-size:25px ;font-weight:bolder; font-family: 'Sriracha', cursive;"><span>
-                       <img src="Images/Eshopping.png" style="width:70px" alt="Shopppy" height ="30" /></span>Shopppy</a>
+                       <img src="Images/Eshopping.png" style="width:70px" alt="Shopppy" height ="30" /></span>SHOPBLINK</a>
    
 
                 </div>

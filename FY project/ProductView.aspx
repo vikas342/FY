@@ -4,9 +4,8 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
     <br />
-    <br />
+    
 
-    <br /><br /><br />
     <button id="btnCart2" runat="server" class="btn btn-primary navbar-btn pull-right hide" onserverclick="btnCart2_ServerClick" type="button">
                         Cart <span id="CartBadge" runat="server" class="badge">0</span>
     </button>
@@ -35,12 +34,12 @@
   </ol>
 
   <!-- Wrapper for slides -->
-  <div class="carousel-inner" role="listbox">
+  <div class="carousel-inner" role="listbox" >
 
       <asp:repeater ID="rptrImage" runat="server">
           <ItemTemplate>
-    <div class="item <%# GetActiveImgClass(Container.ItemIndex) %>">
-      <img src="Images/ProductImages/<%# Eval("PID") %>/<%# Eval("Name") %><%# Eval("Extention") %>" alt="<%# Eval("Name") %>" onerror="this.src='Images/ImageNotAvailable.jpg'">
+    <div class="item <%# GetActiveImgClass(Container.ItemIndex) %>" >
+      <img style="width:400px ; height:500px" src="Images/ProductImages/<%# Eval("PID") %>/<%# Eval("Name") %><%# Eval("Extention") %>" alt="<%# Eval("Name") %>" onerror="this.src='Images/ImageNotAvailable.jpg'"  />
       
     </div>
              </ItemTemplate>

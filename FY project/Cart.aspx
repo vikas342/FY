@@ -16,8 +16,8 @@
         <asp:UpdatePanel ID="UpdatePanel1" runat="server">
             <ContentTemplate>
                 <div class="container">
-                <br />
-                <br />
+  
+
                     <button id="btnCart2" runat="server" class="btn btn-primary navbar-btn pull-right hidden" onserverclick="btnCart2_ServerClick" type="button">
                         Cart <span id="CartBadge" runat="server" class="badge">0</span>
                     </button>

@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/AdminMasterPage.master" AutoEventWireup="true" CodeFile="admin_contact.aspx.cs" Inherits="FY_project.admin_contact" %>
+﻿<%@ Page Title="Contact us" Language="C#" MasterPageFile="~/AdminMasterPage.master" AutoEventWireup="true" CodeFile="admin_contact.aspx.cs" Inherits="FY_project.admin_contact" %>
 
 
 

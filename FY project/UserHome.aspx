@@ -140,7 +140,7 @@ background: linear-gradient(to top right, #121FCF 40%, #CF1512 60%);
                         <img src="ImgSlider/bannner2.gif" alt="Women's colothing offer" style="width: 100%; height:300px;">
                             </a>
                         <div class="carousel-caption">
-                          >
+                          
                         </div>
                     </div>
                     <div class="item">
@@ -315,7 +315,7 @@ Elevate your look with our stunning collection of jewelry. Our carefully curated
             <div class="panel-heading">
                 HOLI SPECIAL SALE UPTO 50% OFF</div>
             <div class="panel-body">
-                <div class="row" style="padding-top: 50px">
+                <div class="row" style="padding-top: 20px">
                     <asp:Repeater ID="rptrProducts" runat="server">
                         <ItemTemplate>
                             <div class="col-sm-3 col-md-3 ">

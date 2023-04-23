@@ -48,6 +48,7 @@ public partial class AdminHome : System.Web.UI.Page
 
         SqlConnection con = new SqlConnection(CS);
         string qr = "select  distinct t2.PName,t1.Quantity from tblProductSizeQuantity as t1 inner join tblProducts as t2 on t2.PID=t1.PID";
+
         SqlCommand cmd = new SqlCommand(qr, con);
         SqlDataAdapter da = new SqlDataAdapter(cmd);
         DataTable dt = new DataTable();
